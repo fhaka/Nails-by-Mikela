@@ -1,0 +1,1630 @@
+﻿<!DOCTYPE html>
+<html lang="sq">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JRWN7T8YG0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JRWN7T8YG0');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nails by Mikela - Studio thonjsh</title>
+<meta name="description" content="Faqe statike në shqip për Nails by Mikela me shërbime, punime, orar dhe kontakt në Instagram.">
+<meta name="theme-color" content="#4E0B18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Fraunces:ital,opsz,wght@1,9..144,300..500&display=swap" rel="stylesheet">
+<script>
+/* Runs before first paint: restores the chosen polish and decides on the intro. */
+(function(){
+  var d=document.documentElement;
+  d.classList.add('js');
+  try{
+    var s=localStorage.getItem('polish');
+    if(s) d.dataset.polish=s;
+    if(!sessionStorage.getItem('seen') && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+      d.classList.add('intro');
+      sessionStorage.setItem('seen','1');
+    }
+  }catch(e){}
+})();
+</script>
+<style>
+/* ---------- TOKENS ---------- */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --milk:#F7F2EE; --paper:#FFFDFB; --ink:#1B1215; --muted:#6B5B5F; --line:#E4DAD5;
+  /* Polish theme, bordo by default */
+  --polish:#4E0B18; --on:#FBEFE9; --soft:#F4DCD8; --accent:#8A1428; --glow:#E58C8F;
+  --on-mute:color-mix(in srgb,var(--on) 74%,transparent);
+  --on-line:color-mix(in srgb,var(--on) 22%,transparent);
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --italic:'Fraunces',Georgia,serif;
+  --pad:clamp(1.25rem,5vw,5rem);
+  --expo:cubic-bezier(.16,1,.3,1);
+  --back:cubic-bezier(.34,1.56,.64,1);
+  --nail:50% 50% 44% 44% / 44% 44% 16% 16%;
+}
+html[data-polish="zeze"]{--polish:#131013;--on:#F7F2EE;--soft:#E8E2DF;--accent:#131013;--glow:#C9B8B2}
+html[data-polish="kobalt"]{--polish:#1A2BB0;--on:#F4F5FF;--soft:#DDE1FB;--accent:#1A2BB0;--glow:#A9B6FF}
+html[data-polish="roze"]{--polish:#F2C7CF;--on:#3D0E19;--soft:#F9E4E7;--accent:#A41C3A;--glow:#A41C3A}
+html[data-polish="qershi"]{--polish:#A30D25;--on:#FFF3EF;--soft:#F8D9D6;--accent:#A30D25;--glow:#FFC1B4}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--display);font-variation-settings:'opsz' 14;font-size:1.0625rem;line-height:1.6;background:var(--milk);color:var(--ink);overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+em{font-family:var(--italic);font-style:italic;font-weight:300;font-variation-settings:normal;letter-spacing:-.01em}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:4px}
+.on-polish :focus-visible{outline-color:var(--on)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;top:.75rem;left:.75rem;z-index:10001;background:var(--ink);color:#fff;padding:.6rem 1rem;border-radius:999px;transform:translateY(-200%);transition:transform .2s}
+.skip:focus{transform:none}
+
+/* Type */
+.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.7rem}
+.eyebrow::before{content:'';width:.55em;height:.85em;border-radius:50% 50% 44% 44%/60% 60% 30% 30%;background:currentColor;flex:none}
+.on-polish .eyebrow{color:var(--on)}
+.h2{font-size:clamp(2.9rem,7.6vw,7.25rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 82;line-height:.94;letter-spacing:-.025em;margin-top:1rem}
+.h2 em{color:var(--accent);font-size:1.02em}
+.on-polish .h2 em{color:var(--glow)}
+.lede{color:var(--muted);max-width:34ch}
+.on-polish .lede{color:var(--on-mute)}
+
+/* ---------- SPLIT TEXT + REVEALS ---------- */
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding:.14em .07em .2em;margin:-.14em -.07em -.2em}
+.c{display:inline-block;will-change:transform}
+.js [data-split] .c{transform:translateY(120%) rotate(7deg);transition:transform 1s var(--expo);transition-delay:calc(var(--i)*22ms)}
+.js [data-split].in .c{transform:none}
+.js [data-r]{opacity:0;transform:translateY(38px);transition:opacity .9s var(--expo),transform 1.1s var(--expo);transition-delay:calc(var(--d,0)*90ms)}
+.js [data-r="scale"]{transform:scale(.88) translateY(30px)}
+.js [data-r="clip"]{opacity:1;transform:none;clip-path:inset(100% 0 0 0 round 200px);transition:clip-path 1.3s var(--expo);transition-delay:calc(var(--d,0)*90ms)}
+.js [data-r].in{opacity:1;transform:none}
+.js [data-r="clip"].in{clip-path:inset(0 0 0 0 round 0)}
+
+/* ---------- BUTTONS ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;gap:.7rem;padding:1rem 1.55rem;border-radius:999px;font-weight:650;font-size:1rem;line-height:1.2;overflow:hidden;white-space:nowrap;transform:translate(var(--mgx,0),var(--mgy,0));transition:transform .5s var(--expo),background-color .3s,color .3s,box-shadow .4s;isolation:isolate}
+.btn::before{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;background:var(--fill,var(--glow));transform:translateY(102%);transition:transform .55s var(--expo)}
+.btn:hover::before{transform:none}
+.btn:active{transform:translate(var(--mgx,0),var(--mgy,0)) scale(.96)}
+.roll{display:block;overflow:hidden;height:1.2em}
+.roll>span{display:block;transition:transform .55s var(--expo)}
+.roll>span::after{content:attr(data-t);display:block}
+.btn:hover .roll>span{transform:translateY(-50%)}
+.arr{width:1.05em;height:1.05em;flex:none;transition:transform .5s var(--expo)}
+.btn:hover .arr{transform:translateX(4px) rotate(-45deg)}
+.btn-on{background:var(--on);color:var(--polish);--fill:var(--soft)}
+.btn-line{box-shadow:inset 0 0 0 1.5px var(--on-line);color:var(--on);--fill:var(--on-line)}
+.btn-polish{background:var(--polish);color:var(--on);--fill:var(--accent)}
+html[data-polish="roze"] .btn-polish{--fill:#E9AEB9}
+html[data-polish="zeze"] .btn-polish{--fill:#3a3236}
+html[data-polish="kobalt"] .btn-polish{--fill:#0F1C86}
+html[data-polish="qershi"] .btn-polish{--fill:#7E0519}
+
+/* ---------- INTRO ---------- */
+.intro-screen{display:none}
+.intro .intro-screen{display:grid;place-items:center;position:fixed;inset:0;z-index:10000;background:var(--polish);color:var(--on);border-radius:0 0 50% 50%/0 0 0 0;animation:introOut 1s 1.35s var(--expo) forwards;pointer-events:none}
+.intro-nail{width:clamp(70px,9vw,110px);overflow:visible;animation:introPop .7s var(--back) both}
+.intro-fill{transform-box:fill-box;transform-origin:bottom;animation:paintUp 1.05s .15s cubic-bezier(.6,0,.2,1) both}
+.intro-gloss{animation:fadeIn .4s 1s both}
+.intro-name{position:absolute;bottom:clamp(2rem,8vh,5rem);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;animation:fadeIn .6s .2s both}
+@keyframes introOut{to{transform:translateY(-105%);border-radius:0 0 50% 50%/0 0 22vw 22vw}}
+@keyframes introPop{from{transform:scale(.5) rotate(-14deg);opacity:0}}
+@keyframes paintUp{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes fadeIn{from{opacity:0}}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;top:clamp(.6rem,1.6vh,1.1rem);left:50%;z-index:900;width:min(1120px,calc(100% - 1.5rem));display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.42rem .45rem .42rem 1.3rem;border-radius:999px;background:color-mix(in srgb,var(--paper) 74%,transparent);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 10px 34px rgba(27,18,21,.13);transform:translateX(-50%);transition:transform .7s var(--expo)}
+.nav.hide{transform:translate(-50%,-220%)}
+.js .nav{animation:navIn 1.1s var(--expo) both;animation-delay:var(--enter,.15s)}
+.intro{--enter:1.75s}
+@keyframes navIn{from{translate:0 -140%}}
+.brand{font-weight:700;font-size:1.12rem;letter-spacing:-.015em;font-variation-settings:'opsz' 40,'wdth' 88;color:var(--ink);white-space:nowrap}
+.brand em{color:var(--accent);font-size:1.05em}
+.links{position:relative;display:flex;gap:.1rem}
+.links a{position:relative;z-index:1;display:block;padding:.48rem .9rem;border-radius:999px;font-size:.95rem;font-weight:500;color:var(--ink);transition:color .3s}
+.links a.on{color:var(--on)}
+.pill{position:absolute;top:0;left:0;height:100%;width:0;border-radius:999px;background:var(--polish);opacity:0;transition:transform .6s var(--expo),width .6s var(--expo),opacity .3s,background-color .3s}
+.nav-r{display:flex;align-items:center;gap:.4rem}
+.nav .btn{padding:.68rem 1.2rem;font-size:.95rem}
+.ham{display:none;width:44px;height:44px;border-radius:50%;position:relative;background:var(--milk)}
+.ham i{position:absolute;left:13px;right:13px;height:2px;border-radius:2px;background:var(--ink);transition:transform .5s var(--expo),top .5s var(--expo)}
+.ham i:first-child{top:18px}.ham i:last-child{top:25px}
+.ham[aria-expanded="true"] i:first-child{top:21px;transform:rotate(45deg)}
+.ham[aria-expanded="true"] i:last-child{top:21px;transform:rotate(-45deg)}
+.mmenu{position:fixed;inset:0;z-index:850;background:var(--polish);color:var(--on);padding:6.5rem var(--pad) 2rem;display:flex;flex-direction:column;justify-content:space-between;clip-path:circle(0 at calc(100% - 42px) 42px);visibility:hidden;transition:clip-path .9s var(--expo),visibility 0s .9s}
+.mmenu.open{clip-path:circle(150vmax at calc(100% - 42px) 42px);visibility:visible;transition:clip-path .9s var(--expo),visibility 0s}
+.mmenu li{overflow:hidden}
+.mmenu li a{display:block;font-size:clamp(2.9rem,14vw,4.6rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 80;line-height:1.1;letter-spacing:-.02em;transform:translateY(110%);transition:transform .8s var(--expo)}
+.mmenu.open li a{transform:none;transition-delay:calc(var(--i)*60ms + 120ms)}
+.mmenu p{color:var(--on-mute);font-size:.95rem}
+
+/* ---------- HERO ---------- */
+.hero{position:sticky;top:0;z-index:0;min-height:100svh;background:var(--polish);color:var(--on);overflow:hidden;display:flex;flex-direction:column;--mx:0;--my:0;--p:0}
+.hero.past{visibility:hidden}
+.glow{position:absolute;border-radius:50%;background:var(--glow);filter:blur(90px);opacity:.3;pointer-events:none;will-change:transform}
+.glow.a{width:48vw;height:48vw;right:-8vw;top:-14vw;animation:drift 16s ease-in-out infinite alternate}
+.glow.b{width:30vw;height:30vw;left:-8vw;bottom:-10vw;opacity:.17;animation:drift 21s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-9vw,8vw) scale(1.25)}}
+.sweep{position:absolute;inset:-20% -60%;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.09) 50%,transparent 55%);animation:sweep 9s ease-in-out infinite;pointer-events:none}
+@keyframes sweep{0%,55%{transform:translateX(-36%)}100%{transform:translateX(36%)}}
+.hero-copy{position:relative;z-index:3;flex:1;display:flex;flex-direction:column;padding:clamp(6rem,14vh,8.5rem) var(--pad) clamp(1.75rem,5vh,3.25rem);pointer-events:none;transform:translateY(calc(var(--p)*-90px))}
+.hero-copy a{pointer-events:auto}
+.h1{font-size:min(14.6vw,27vh);font-weight:750;font-variation-settings:'opsz' 96,'wdth' 78;line-height:.84;letter-spacing:-.035em;margin-top:clamp(.9rem,2.4vh,1.6rem)}
+.h1 em{color:var(--glow);font-size:1.02em;letter-spacing:-.03em}
+/* Chrome headline: one mirror gradient runs through all the letters, its phase moved from JS */
+.h1{--clo:color-mix(in srgb,var(--on) 72%,var(--polish));--chi:#fff;--ph:0}
+.h1 em{--clo:var(--glow);--chi:color-mix(in srgb,var(--glow) 42%,#fff)}
+html[data-polish="roze"] .h1{--clo:#3D0E19;--chi:#8C3248}
+html[data-polish="roze"] .h1 em{--clo:#A41C3A;--chi:#D2566F}
+@supports ((background-clip:text) or (-webkit-background-clip:text)){
+  .h1 .c{padding:.2em .09em .26em;margin:-.2em -.09em -.26em;color:transparent;-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text;background-repeat:no-repeat;background-size:var(--hw,100%) var(--hh,100%);background-position:calc(var(--lx,0px)*-1) calc(var(--ly,0px)*-1);
+    background-image:repeating-linear-gradient(112deg,var(--clo) calc(var(--ph)*1em),var(--chi) calc(var(--ph)*1em + .55em),var(--clo) calc(var(--ph)*1em + .72em),var(--clo) calc(var(--ph)*1em + 1.7em),var(--chi) calc(var(--ph)*1em + 2.5em),color-mix(in srgb,var(--clo) 70%,var(--chi)) calc(var(--ph)*1em + 2.75em),var(--clo) calc(var(--ph)*1em + 4em))}
+}
+@media(forced-colors:active){.h1 .c{color:CanvasText;-webkit-text-fill-color:CanvasText;background:none}}
+.hero-foot{margin-top:auto;max-width:min(440px,36vw);padding-top:1.5rem}
+.hero-foot p{color:var(--on-mute);font-size:1.05rem;line-height:1.5}
+.ctas{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.3rem}
+.js .hero-in{opacity:0;transform:translateY(26px);transition:opacity 1s var(--expo),transform 1s var(--expo);transition-delay:calc(var(--d)*110ms + 500ms)}
+.ready .hero-in{opacity:1;transform:none}
+
+.fingers{position:absolute;z-index:2;right:clamp(1rem,3vw,4rem);bottom:0;top:9vh;width:min(55vw,100vh);display:flex;align-items:flex-end;gap:clamp(6px,1vw,16px)}
+.finger{flex:1 1 0;height:calc(var(--h)*1%);rotate:var(--rot);transform-origin:50% 100%;transform:translate3d(calc(var(--mx)*var(--dp)*26px),calc(var(--my)*var(--dp)*12px + var(--p)*var(--dp)*-230px),0);will-change:transform}
+.js .finger{translate:0 112%;transition:translate 1.5s var(--expo);transition-delay:calc(var(--i)*95ms + 150ms)}
+.ready .finger{translate:0 0}
+.nail{position:relative;height:calc(100% + 60px);border-radius:var(--nail);overflow:hidden;background:color-mix(in srgb,var(--on) 12%,transparent);box-shadow:0 26px 60px rgba(0,0,0,.34),inset 0 0 0 1px rgba(255,255,255,.2);animation:float 7s ease-in-out infinite alternate;animation-delay:calc(var(--i)*-1.3s)}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-14px)}}
+.nail img{transition:transform 1.4s var(--expo),filter .8s;transform:scale(calc(var(--z,1.12)));object-position:var(--pos,50% 50%)}
+.nail:hover img{transform:scale(calc(var(--z,1.12)*1.09))}
+.gloss{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(38% 26% at calc(36% + var(--mx)*22%) calc(20% + var(--my)*8%),rgba(255,255,255,.6),transparent 70%),linear-gradient(100deg,transparent 18%,rgba(255,255,255,.14) 25%,transparent 34%)}
+.chip{position:absolute;z-index:4;right:clamp(1rem,4vw,4.5rem);top:clamp(5.4rem,13vh,7.5rem);display:flex;align-items:center;gap:.7rem;padding:.6rem 1rem .6rem .7rem;border-radius:999px;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);color:var(--ink);font-size:.86rem;line-height:1.2;box-shadow:0 14px 34px rgba(0,0,0,.24);animation:float 5.5s ease-in-out infinite alternate}
+.chip b{display:block;font-weight:700}
+.chip span{color:var(--muted)}
+.stars{color:var(--accent);letter-spacing:.08em;font-size:.82rem}
+.cue{position:absolute;z-index:4;left:50%;bottom:1.1rem;width:1px;height:46px;background:var(--on-line);overflow:hidden}
+.cue::after{content:'';position:absolute;inset:0;background:var(--on);animation:cue 2.2s var(--expo) infinite}
+@keyframes cue{from{transform:translateY(-100%)}to{transform:translateY(100%)}}
+
+/* ---------- MAIN SHEET (slides over hero with a French smile line) ---------- */
+.sheet{position:relative;z-index:2;background:var(--milk);border-radius:50% 50% 0 0/calc(var(--s,1)*clamp(26px,9vw,130px)) calc(var(--s,1)*clamp(26px,9vw,130px)) 0 0;--s:1;box-shadow:0 -24px 70px rgba(0,0,0,.22)}
+
+/* Marquee */
+.mq{padding-top:clamp(3.5rem,8vw,7rem);overflow:hidden;user-select:none}
+.mq-row{display:flex;width:max-content;will-change:transform;font-size:clamp(2.6rem,7.8vw,7.5rem);font-weight:750;font-variation-settings:'opsz' 96,'wdth' 78;line-height:1.14;letter-spacing:-.025em;white-space:nowrap}
+.mq-row span{display:inline-flex;align-items:center}
+.mq-row span::after{content:'';display:inline-block;width:.32em;height:.5em;margin:0 .42em;border-radius:50% 50% 44% 44%/60% 60% 30% 30%;background:var(--accent);rotate:14deg;animation:spin 9s linear infinite}
+@keyframes spin{to{rotate:374deg}}
+.mq-row.ghost{color:transparent;-webkit-text-stroke:1.5px var(--accent)}
+.mq-row.ghost span::after{background:none;box-shadow:inset 0 0 0 1.5px var(--accent)}
+
+/* About */
+.about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,6vw,6.5rem);padding:clamp(4rem,9vw,9rem) var(--pad) clamp(3rem,5vw,5rem);align-items:start}
+.about-pic{position:sticky;top:12vh}
+.about-pic{filter:drop-shadow(0 30px 44px rgba(27,18,21,.22))}
+.about-frame{position:relative;aspect-ratio:3/4.15;border-radius:var(--nail);overflow:hidden}
+.about-frame img{height:118%;object-position:50% 58%;will-change:transform}
+.quote{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);width:max-content;max-width:80%;text-align:center;font-family:var(--italic);font-style:italic;font-weight:300;font-size:clamp(1.15rem,1.9vw,1.6rem);line-height:1.2;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.65)}
+.scrub{font-size:clamp(1.5rem,2.75vw,2.6rem);font-weight:500;font-variation-settings:'opsz' 40,'wdth' 92;line-height:1.24;letter-spacing:-.015em;margin-top:clamp(1.75rem,4vw,3.5rem)}
+.scrub+.scrub{margin-top:1.1em}
+.sw{transition:opacity .25s linear}
+.sig{font-family:var(--italic);font-style:italic;font-weight:300;font-size:clamp(2.2rem,4vw,3.5rem);color:var(--accent);margin-top:1.5rem;display:inline-block}
+.js .sig{clip-path:inset(0 100% 0 0);transition:clip-path 1.6s .2s cubic-bezier(.6,0,.2,1)}
+.js .sig.in{clip-path:inset(-20% -5% -20% 0)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin:0 var(--pad);border-top:1.5px solid var(--ink)}
+.stat{padding:1.5rem 1.25rem 2.25rem 0;border-right:1px solid var(--line);padding-left:1.25rem;transition:background-color .4s}
+.stat:first-child{padding-left:0}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-size:clamp(3.2rem,7.6vw,7.25rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 78;line-height:1;letter-spacing:-.03em;color:var(--accent);transition:font-variation-settings .6s var(--expo)}
+.stat:hover b{font-variation-settings:'opsz' 96,'wdth' 100}
+.stat strong{display:block;font-weight:650;margin-top:.5rem;line-height:1.25}
+.stat small{display:block;color:var(--muted);font-size:.95rem}
+
+/* Services */
+.services{padding:clamp(5rem,10vw,10rem) 0 clamp(3rem,6vw,6rem)}
+.sec-top{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;padding:0 var(--pad);margin-bottom:clamp(2.5rem,5vw,4.5rem)}
+.rows{border-top:1.5px solid var(--ink)}
+.row{position:relative;display:grid;grid-template-columns:3.2rem minmax(0,1.25fr) minmax(0,1fr) 6.5rem 2.75rem;align-items:center;gap:1.25rem;padding:clamp(1.15rem,2.1vw,1.9rem) var(--pad);border-bottom:1px solid var(--line);overflow:hidden;isolation:isolate;transition:color .35s,padding-left .7s var(--expo)}
+.row::before{content:'';position:absolute;inset:0;z-index:-1;background:var(--polish);transform:translateY(101%);border-radius:50% 50% 0 0/40px 40px 0 0;transition:transform .7s var(--expo),border-radius .7s var(--expo)}
+.row:hover,.row:focus-visible{color:var(--on)}
+.row:hover::before,.row:focus-visible::before{transform:none;border-radius:0}
+.row:focus-visible{outline-offset:-4px}
+.row-n{font-size:.92rem;font-weight:500;opacity:.65}
+.row-name{font-size:clamp(1.85rem,3.9vw,3.75rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 76;line-height:1.02;letter-spacing:-.02em;transition:font-variation-settings .7s var(--expo)}
+.row:hover .row-name{font-variation-settings:'opsz' 96,'wdth' 100}
+.row-d{font-size:.98rem;line-height:1.45;color:var(--muted);transition:color .35s}
+.row:hover .row-d,.row:focus-visible .row-d{color:var(--on-mute)}
+.row-dur{font-size:.92rem;font-weight:550;text-align:right;white-space:nowrap}
+.row-go{width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:50%;box-shadow:inset 0 0 0 1.5px currentColor;transition:transform .6s var(--back),background-color .3s,color .3s}
+.row-go svg{width:1.05rem;height:1.05rem}
+.row:hover .row-go{transform:rotate(-45deg) scale(1.08);background:var(--on);color:var(--polish);box-shadow:none}
+.row-thumb{display:none}
+.services-note{padding:1.25rem var(--pad) 0;color:var(--muted);font-size:.98rem}
+.peek{position:fixed;top:0;left:0;z-index:700;width:clamp(210px,20vw,290px);aspect-ratio:3/4.1;border-radius:var(--nail);overflow:hidden;pointer-events:none;opacity:0;scale:.5;transition:opacity .4s,scale .7s var(--expo);box-shadow:0 30px 70px rgba(0,0,0,.4);will-change:transform}
+.peek.on{opacity:1;scale:1}
+.peek img{position:absolute;inset:0;opacity:0;transform:scale(1.28);transition:opacity .4s,transform 1s var(--expo)}
+.peek img.on{opacity:1;transform:scale(1.08)}
+
+/* Polish picker band */
+.band{margin:clamp(1.5rem,4vw,3.5rem) var(--pad) clamp(3rem,7vw,7rem);padding:clamp(2.25rem,5vw,4.5rem);border-radius:clamp(26px,4vw,52px);background:var(--soft);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(1.75rem,4vw,4rem);align-items:center;overflow:hidden}
+.band h2{font-size:clamp(2.2rem,4.6vw,4.4rem)}
+.band p{color:var(--muted);margin-top:.9rem;max-width:36ch}
+.swatches{display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(.4rem,1.4vw,1rem);height:clamp(170px,17vw,220px);margin-top:clamp(1.5rem,3vw,2.5rem)}
+.nail3d{position:relative;height:clamp(340px,38vw,560px);display:flex;align-items:center;justify-content:center}
+.nail3d::before{content:'';position:absolute;left:50%;top:50%;width:min(92%,440px);aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,#fff,transparent);opacity:.72;animation:halo 5s ease-in-out infinite alternate}
+@keyframes halo{to{transform:translate(-50%,-50%) scale(1.12);opacity:.45}}
+.nail3d canvas{position:relative;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y;outline-offset:4px}
+.nail3d canvas.grabbing{cursor:grabbing}
+.nail3d small{position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:.86rem;font-weight:550;color:var(--muted);pointer-events:none;transition:opacity .5s}
+.nail3d.used small{opacity:0}
+.no3d .nail3d{display:none}
+.no3d .band{grid-template-columns:minmax(0,1fr)}
+.sw-btn{flex:1 1 0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:.6rem;font-size:.9rem;font-weight:600}
+.sw-nail{position:relative;display:block;width:100%;max-width:92px;height:var(--h,82%);border-radius:var(--nail);background:var(--c);box-shadow:0 14px 26px rgba(27,18,21,.2),inset 0 0 0 1px rgba(255,255,255,.2);overflow:hidden;transform-origin:50% 100%;transition:transform .7s var(--back)}
+.sw-nail::after{content:'';position:absolute;left:20%;top:9%;width:17%;height:48%;border-radius:999px;background:linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,.04));rotate:9deg}
+.js .band.in .sw-nail{animation:swayIn 1s var(--back) both;animation-delay:calc(var(--i)*90ms)}
+.js .band:not(.in) .sw-nail{transform:translateY(120%)}
+@keyframes swayIn{from{transform:translateY(120%) rotate(-10deg)}}
+.sw-btn:hover .sw-nail{transform:translateY(-8px) rotate(-3deg)}
+.sw-btn[aria-pressed="true"] .sw-nail{transform:translateY(-16px);box-shadow:0 22px 34px rgba(27,18,21,.3),0 0 0 2px var(--soft),0 0 0 4px var(--accent)}
+.sw-btn[aria-pressed="true"]{color:var(--accent)}
+
+/* Gallery */
+.gallery{position:relative;background:var(--polish);color:var(--on)}
+.gal-stick{overflow:hidden;padding:clamp(4rem,10vw,7rem) 0}
+.gal-track{display:flex;align-items:center;gap:clamp(1rem,2.4vw,2.25rem);padding:0 var(--pad);overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:var(--pad);scrollbar-width:none}
+.gal-track::-webkit-scrollbar{display:none}
+.gal-intro{flex:0 0 min(84vw,520px);scroll-snap-align:start}
+.gal-intro p{margin-top:1.25rem}
+.gcard{flex:0 0 auto;width:calc(var(--gh)*.72);--gh:min(62vh,540px);scroll-snap-align:center;text-align:left;display:block;transform:translateY(calc(var(--off,0)*1px)) rotate(calc(var(--tilt,0)*1deg));transition:transform .9s var(--expo)}
+.gcard:nth-child(even){--off:26}
+.gcard:nth-child(odd){--off:-20}
+.gframe{position:relative;display:block;height:var(--gh);overflow:hidden;border-radius:clamp(20px,2vw,30px);background:color-mix(in srgb,var(--on) 12%,transparent);transition:border-radius .9s var(--expo);box-shadow:0 26px 60px rgba(0,0,0,.28)}
+.gcard:nth-child(3n+2) .gframe{border-radius:var(--nail)}
+.gcard:hover .gframe{border-radius:var(--nail)}
+.gframe img{position:absolute;inset:0 -9%;width:118%;max-width:none;object-position:var(--pos,50% 50%);transform:translateX(calc(var(--par,0)*7%));transition:scale 1.4s var(--expo);will-change:transform}
+.gcard:hover img{scale:1.06}
+.gcap{display:flex;gap:.8rem;justify-content:space-between;margin-top:.8rem;font-size:.98rem;line-height:1.25}
+.gcap b{font-weight:600}
+.gcap span{color:var(--on-mute);font-size:.88rem;white-space:nowrap}
+.gal-bar{position:absolute;left:var(--pad);right:var(--pad);bottom:1.5rem;display:none;align-items:center;gap:1rem;font-size:.92rem;font-weight:600;font-variant-numeric:tabular-nums}
+.gal-bar i{flex:1;height:2px;background:var(--on-line);position:relative;overflow:hidden;border-radius:2px}
+.gal-bar i::after{content:'';position:absolute;inset:0;background:var(--on);transform-origin:left;transform:scaleX(var(--gp,0))}
+html.pin .gal-stick{position:sticky;top:0;height:100vh;padding:0;display:flex;align-items:center}
+html.pin .gal-track{overflow:visible;width:max-content;will-change:transform;scroll-snap-type:none;padding-right:12vw;touch-action:pan-y}
+html.pin .gal-bar{display:flex}
+.gal-track,.gcard{cursor:grab;-webkit-user-select:none;user-select:none}
+.gal-track img{-webkit-user-drag:none;pointer-events:none}
+.gal-track.dragging,.gal-track.dragging .gcard{cursor:grabbing}
+.gframe{transition:border-radius .9s var(--expo),transform .7s var(--expo)}
+.gal-track.dragging .gframe{transform:scale(.965)}
+.gal-hint{display:inline-flex;align-items:center;gap:.5rem;padding-right:.5rem;transition:opacity .5s}
+.gal-hint svg{width:1.3rem;height:1rem;animation:nudge 1.8s ease-in-out infinite}
+.gal-hint.gone{opacity:0}
+@keyframes nudge{0%,100%{transform:translateX(-4px)}50%{transform:translateX(4px)}}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;border:0;background:transparent;color:#fff;overflow:hidden}
+.lb::backdrop{background:rgba(15,8,10,.9);backdrop-filter:blur(10px);animation:fadeIn .4s both}
+.lb-in{position:absolute;inset:0;display:grid;grid-template-rows:minmax(0,1fr) auto;justify-items:center;padding:clamp(.9rem,3vh,2rem) 1rem}
+.lb img{min-height:0;width:auto;max-width:100%;height:100%;object-fit:contain;border-radius:18px}
+.lb-cap{padding-top:.9rem;text-align:center;line-height:1.3}
+.lb-cap b{display:block;font-weight:600;font-size:1.1rem}
+.lb-cap span{opacity:.7;font-size:.92rem}
+.lb-btn{position:absolute;z-index:2;width:3.1rem;height:3.1rem;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(8px);transition:background-color .3s,transform .5s var(--back)}
+.lb-btn:hover{background:rgba(255,255,255,.3);transform:scale(1.1)}
+.lb-btn svg{width:1.15rem;height:1.15rem}
+.lb-x{top:1rem;right:1rem}
+.lb-p{left:1rem;top:50%;margin-top:-1.55rem}
+.lb-n{right:1rem;top:50%;margin-top:-1.55rem}
+.lb-p svg{rotate:180deg}
+
+/* Process */
+.process{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);padding:clamp(5rem,10vw,10rem) var(--pad)}
+.proc-head{position:sticky;top:16vh;align-self:start}
+.steps{display:grid;gap:1.25rem}
+.step{position:sticky;top:calc(13vh + var(--i)*1.4rem);min-height:min(44vh,400px);display:flex;flex-direction:column;justify-content:space-between;gap:2.5rem;padding:clamp(1.6rem,3vw,2.75rem);border-radius:clamp(24px,3vw,40px);background:var(--paper);box-shadow:0 -1px 0 rgba(255,255,255,.7) inset,0 20px 50px rgba(27,18,21,.09);transform-origin:50% 0;transform:scale(var(--sc,1));will-change:transform}
+.step:nth-child(2){background:var(--soft)}
+.step:nth-child(3){background:var(--ink);color:#fff}
+.step:nth-child(4){background:var(--polish);color:var(--on)}
+.step-n{font-size:clamp(4rem,9vw,8.5rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 76;line-height:.84;letter-spacing:-.03em}
+.step h3{font-size:clamp(1.6rem,3vw,2.5rem);font-weight:700;font-variation-settings:'opsz' 60,'wdth' 86;line-height:1.05;letter-spacing:-.015em}
+.step p{margin-top:.5rem;max-width:44ch;opacity:.82}
+
+/* Pricing */
+.pricing{padding:clamp(4rem,8vw,8rem) var(--pad);background:var(--paper);border-radius:clamp(26px,4vw,56px)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.9rem,1.5vw,1.5rem);margin-top:clamp(2.5rem,5vw,4.5rem);perspective:1300px;align-items:stretch}
+.pc{position:relative;display:flex;flex-direction:column;padding:clamp(1.6rem,2.5vw,2.5rem);border-radius:clamp(24px,2.6vw,36px);background:var(--milk);overflow:hidden;transform:rotateX(calc(var(--rx,0)*1deg)) rotateY(calc(var(--ry,0)*1deg));transition:transform .7s var(--expo),box-shadow .5s;transform-style:preserve-3d}
+.pc.tilting{transition:transform .12s linear,box-shadow .5s}
+.pc:hover{box-shadow:0 34px 70px rgba(27,18,21,.15)}
+.pc::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .5s;background:radial-gradient(340px circle at var(--sx,50%) var(--sy,50%),rgba(255,255,255,.5),transparent 65%);mix-blend-mode:soft-light}
+.pc:hover::after{opacity:1}
+.pc.feat{background:var(--polish);color:var(--on)}
+.pc-tier{font-size:.86rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.pc.feat .pc-tier{color:var(--on)}
+.pc h3{font-size:clamp(1.9rem,3vw,2.9rem);font-weight:700;font-variation-settings:'opsz' 70,'wdth' 80;line-height:1;letter-spacing:-.02em;margin-top:.8rem;max-width:8.2em}
+.pc-desc{margin-top:.8rem;color:var(--muted);line-height:1.45;min-height:2.9em}
+.pc.feat .pc-desc{color:var(--on-mute)}
+.pc-dur{font-size:clamp(3rem,5.2vw,5rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 76;line-height:1;letter-spacing:-.03em;margin-top:clamp(1.5rem,3vw,2.75rem);white-space:nowrap}
+.pc-dur small{font-size:.32em;font-weight:600;letter-spacing:0;margin-left:.15em}
+.pc-how{font-size:.95rem;color:var(--muted)}
+.pc.feat .pc-how{color:var(--on-mute)}
+.pc-items{margin:clamp(1.25rem,2.4vw,2rem) 0;display:grid;gap:.55rem;flex:1;align-content:start}
+.pc-items li{display:flex;gap:.65rem;align-items:flex-start;line-height:1.35}
+.pc-items svg{width:1.2em;height:1.2em;flex:none;margin-top:.08em;color:var(--accent)}
+.pc.feat .pc-items svg{color:var(--glow)}
+.pc-items path{stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .8s var(--expo);transition-delay:calc(var(--i)*170ms + 500ms)}
+.in .pc-items path,html:not(.js) .pc-items path{stroke-dashoffset:0}
+.pc .btn{justify-content:center;align-self:stretch}
+.pc-dur{position:relative}
+.seal{position:absolute;bottom:-.1em;right:0;width:clamp(72px,6.4vw,98px);height:clamp(72px,6.4vw,98px);animation:rot 14s linear infinite}
+.seal text{font-size:11.5px;font-weight:600;font-variation-settings:'opsz' 14,'wdth' 100;letter-spacing:.09em;fill:var(--on);text-transform:uppercase}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* Testimonials */
+.testi{padding:clamp(5rem,10vw,10rem) var(--pad);overflow:hidden;text-align:center}
+.testi .eyebrow{justify-content:center}
+.testi .lede{margin:1.25rem auto 0;max-width:46ch}
+.fan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.9rem,1.5vw,1.5rem);margin-top:clamp(2.75rem,6vw,5rem);text-align:left}
+.tc{display:flex;flex-direction:column;justify-content:space-between;gap:2.25rem;padding:clamp(1.6rem,2.4vw,2.4rem);border-radius:clamp(24px,2.6vw,36px);background:var(--paper);box-shadow:0 20px 50px rgba(27,18,21,.09);min-height:300px;rotate:var(--end,0deg);transition:transform .8s var(--expo),rotate .8s var(--expo),box-shadow .5s}
+.tc:hover{rotate:0deg;transform:translateY(-10px) scale(1.02);box-shadow:0 34px 70px rgba(27,18,21,.16)}
+.tc:nth-child(1){--end:-2deg;--x:100%;--start:-9deg}
+.tc:nth-child(2){--end:1deg;--x:0%;--start:3deg;background:var(--polish);color:var(--on)}
+.tc:nth-child(3){--end:-1.2deg;--x:-100%;--start:11deg}
+.js .fan:not(.in) .tc{transform:translate(var(--x),48px) scale(.92);rotate:var(--start)}
+.fan.in .tc{transition-duration:1.25s,1.25s,.5s}
+.fan.in.done .tc{transition-duration:.8s,.8s,.5s}
+.tc-q{font-family:var(--italic);font-style:italic;font-weight:300;font-size:clamp(1.45rem,2.25vw,2.15rem);line-height:1.2;letter-spacing:-.01em}
+.tc .stars i{display:inline-block;font-style:normal}
+.js .fan:not(.in) .stars i{transform:scale(0) rotate(-90deg)}
+.tc .stars i{transition:transform .7s var(--back);transition-delay:calc(var(--i)*80ms + 500ms)}
+.tc:nth-child(2) .stars{color:var(--glow)}
+.tc-f{display:flex;align-items:center;gap:.8rem;line-height:1.25}
+.tc-av{width:2.75rem;height:3.25rem;display:grid;place-items:center;border-radius:var(--nail);background:var(--soft);color:var(--accent);font-weight:700}
+.tc-f b{display:block;font-weight:650}
+.tc-f span{font-size:.92rem;opacity:.72}
+
+/* Instagram */
+.insta{padding:0 0 clamp(5rem,10vw,10rem);overflow:hidden}
+.insta-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;padding:0 var(--pad);margin-bottom:clamp(2.25rem,4vw,3.5rem)}
+.handle{display:block;font-size:clamp(2rem,6.6vw,6.25rem);font-weight:700;font-variation-settings:'opsz' 96,'wdth' 76;letter-spacing:-.025em;line-height:1;margin-top:.8rem;overflow-wrap:anywhere}
+.ig-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(.5rem,1vw,1rem);padding:0 var(--pad)}
+.ig{position:relative;display:block;aspect-ratio:3/4;border-radius:clamp(14px,1.6vw,24px);overflow:hidden;transform:translateY(calc(var(--ty,0)*1px));will-change:transform;background:var(--soft)}
+.ig:nth-child(even){margin-top:clamp(1rem,3vw,3rem)}
+.ig img{transition:transform 1.2s var(--expo),filter .6s}
+.ig:hover img{transform:scale(1.1) rotate(1.5deg);filter:brightness(.68)}
+.ig svg{position:absolute;left:50%;top:50%;width:2.5rem;height:2.5rem;margin:-1.25rem;color:#fff;transform:scale(0);transition:transform .6s var(--back)}
+.ig:hover svg,.ig:focus-visible svg{transform:scale(1)}
+
+/* Booking */
+.booking{position:relative;background:var(--polish);color:var(--on);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(2rem,5vw,5rem);padding:clamp(4.5rem,9vw,9rem) var(--pad);border-radius:clamp(26px,4vw,56px) clamp(26px,4vw,56px) 0 0;overflow:hidden}
+.booking .glow{opacity:.26}
+.book-l{position:relative;z-index:1;align-self:start}
+.book-l .lede{margin-top:1.5rem;max-width:40ch}
+.bd{margin-top:clamp(1.75rem,4vw,3.25rem);border-top:1px solid var(--on-line)}
+.bd li{display:grid;grid-template-columns:7rem minmax(0,1fr);gap:.75rem;padding:.8rem 0;border-bottom:1px solid var(--on-line);line-height:1.35}
+.bd span{color:var(--on-mute);font-size:.94rem}
+.bd a{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px}
+.form-card{position:relative;z-index:1;background:var(--paper);color:var(--ink);padding:clamp(1.4rem,3vw,2.9rem);border-radius:clamp(24px,3vw,40px);box-shadow:0 40px 90px rgba(0,0,0,.3)}
+.form-card :focus-visible{outline-color:var(--accent)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:0 1.1rem}
+.f{position:relative;margin-bottom:1rem}
+.f input,.f textarea{width:100%;background:transparent;border:0;border-bottom:1.5px solid var(--line);padding:1.5rem 0 .55rem;font:inherit;color:var(--ink);outline:none;border-radius:0;resize:none;transition:border-color .3s}
+.f label{position:absolute;left:0;top:1.45rem;color:var(--muted);pointer-events:none;transform-origin:0 0;transition:transform .45s var(--expo),color .3s}
+.f input:focus+label,.f input:not(:placeholder-shown)+label,.f textarea:focus+label,.f textarea:not(:placeholder-shown)+label,.f.fix label{transform:translateY(-1.2rem) scale(.8);color:var(--accent)}
+.f::after{content:'';position:absolute;left:0;right:0;height:2px;bottom:0;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--expo)}
+.f:has(textarea)::after{bottom:7px}
+.f:focus-within::after{transform:scaleX(1)}
+.f.bad input,.fs.bad .chips{animation:shake .5s}
+.f.bad input{border-color:#B3261E}
+@keyframes shake{20%{transform:translateX(-7px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(2px)}}
+.fs{border:0;margin:1rem 0 1.25rem}
+.fs legend{color:var(--muted);font-size:.9rem;margin-bottom:.55rem}
+.fs.bad legend{color:#B3261E}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip-o{position:relative;display:block;cursor:pointer}
+.chip-o input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.chip-o span{display:block;padding:.55rem .95rem;border-radius:999px;font-size:.95rem;font-weight:500;background:var(--milk);line-height:1.25;transition:background-color .3s,color .3s,transform .5s var(--back)}
+.chip-o:hover span{background:var(--soft);transform:translateY(-2px)}
+.chip-o input:checked+span{background:var(--polish);color:var(--on);transform:scale(1.04)}
+.chip-o input:focus-visible+span{outline:2.5px solid var(--accent);outline-offset:2px}
+.fsubmit{width:100%;justify-content:center;padding:1.15rem;font-size:1.05rem;margin-top:.35rem}
+.fnote{margin-top:.9rem;text-align:center;font-size:.92rem;color:var(--muted);line-height:1.4}
+.form-status{margin-top:.6rem;min-height:1.4rem;text-align:center;font-size:.95rem;font-weight:600;color:var(--accent);line-height:1.4}
+
+/* Footer */
+footer{background:var(--ink);color:#F4ECE8;overflow:hidden}
+.ft{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:clamp(1.5rem,3vw,3rem);padding:clamp(3rem,6vw,5.5rem) var(--pad) clamp(2rem,4vw,3rem)}
+.ft p{color:#C5B7B5;max-width:30ch;line-height:1.5}
+.ft-brand{font-size:1.7rem;font-weight:700;font-variation-settings:'opsz' 60,'wdth' 86;letter-spacing:-.02em;margin-bottom:.6rem}
+.ft-brand em{color:#E9B8B4}
+.ft h4{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A79896;margin-bottom:.85rem}
+.ft li{margin-bottom:.4rem}
+.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .5s var(--expo);padding-bottom:1px}
+.ul:hover{background-size:100% 1px}
+.map{display:grid;grid-template-columns:minmax(220px,.55fr) 1fr;gap:clamp(1.25rem,3vw,3rem);padding:0 var(--pad) clamp(2rem,4vw,3rem);align-items:center}
+.map h3{font-size:clamp(1.9rem,3.6vw,3.2rem);font-weight:700;font-variation-settings:'opsz' 70,'wdth' 80;line-height:1;letter-spacing:-.02em;margin:.5rem 0 .7rem}
+.map h3 em{color:#E9B8B4}
+.map p{color:#C5B7B5;margin-bottom:1.1rem}
+.map .btn{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3);color:#fff;--fill:rgba(255,255,255,.14)}
+.map-frame{height:clamp(220px,28vw,340px);border-radius:clamp(20px,2.5vw,34px);overflow:hidden;background:#2a2023}
+.map-frame iframe{display:block;width:100%;height:100%;border:0;filter:grayscale(.85) contrast(.95);transition:filter .8s}
+.map-frame:hover iframe{filter:none}
+.wordmark{display:flex;justify-content:center;font-size:29vw;font-weight:800;font-variation-settings:'opsz' 96,'wdth' 75;line-height:.76;letter-spacing:-.03em;color:#F4ECE8;padding-top:.08em;user-select:none;overflow:hidden}
+.wordmark span{display:inline-block;transition:font-variation-settings .6s var(--expo),color .4s,transform 1.2s var(--expo);transition-delay:0s,0s,calc(var(--i)*70ms)}
+.js .wordmark:not(.in) span{transform:translateY(105%)}
+.wordmark span:hover{font-variation-settings:'opsz' 96,'wdth' 100;color:var(--glow)}
+.fb{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wrap:wrap;padding:1.1rem var(--pad);font-size:.9rem;color:#A79896;background:#120B0D}
+
+/* ---------- FLOATING UI ---------- */
+.fab{position:fixed;right:clamp(.8rem,2vw,1.6rem);bottom:clamp(.8rem,2vw,1.6rem);z-index:840}
+.fab-btn{position:relative;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--paper);box-shadow:0 12px 32px rgba(27,18,21,.3);transition:transform .6s var(--back)}
+.fab-btn:hover{transform:scale(1.1) rotate(-8deg)}
+.fab-btn svg{width:26px;height:36px;overflow:visible}
+.fab-fill{transform-box:fill-box;transform-origin:bottom;transform:scaleY(var(--sp,0));fill:var(--accent)}
+.fab-pop{position:absolute;right:0;bottom:70px;display:flex;flex-direction:column;gap:.15rem;padding:.5rem;width:158px;border-radius:24px;background:var(--paper);box-shadow:0 20px 50px rgba(27,18,21,.3);transform-origin:100% 100%;transform:scale(.5) translateY(20px);opacity:0;visibility:hidden;transition:transform .5s var(--back),opacity .25s,visibility 0s .4s}
+.fab.open .fab-pop{transform:none;opacity:1;visibility:visible;transition:transform .5s var(--back),opacity .25s,visibility 0s}
+.fab-pop button{display:flex;align-items:center;gap:.6rem;padding:.42rem .55rem;border-radius:999px;font-size:.95rem;font-weight:550;text-align:left;transition:background-color .25s}
+.fab-pop button:hover,.fab-pop button[aria-pressed="true"]{background:var(--milk)}
+.fab-pop i{width:14px;height:21px;border-radius:50% 50% 44% 44%/60% 60% 30% 30%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.cursor{position:fixed;top:0;left:0;z-index:9000;width:38px;height:38px;margin:-19px;border-radius:50%;box-shadow:inset 0 0 0 1.5px #fff;mix-blend-mode:difference;pointer-events:none;display:grid;place-items:center;opacity:0;transition:opacity .3s;will-change:transform}
+.cursor b{font-size:.7rem;font-weight:600;color:#fff;opacity:0;transition:opacity .2s}
+.cursor-in{position:absolute;inset:0;border-radius:50%;background:#fff;transform:scale(0);transition:transform .5s var(--expo)}
+.cursor.on{opacity:1}
+.cursor.big{box-shadow:none}
+.cursor.big .cursor-in{transform:scale(1.5)}
+.cursor.lab{box-shadow:none;mix-blend-mode:normal}
+.cursor.lab .cursor-in{transform:scale(2.2);background:var(--paper)}
+.cursor.lab b{opacity:1;position:relative;color:var(--ink)}
+#fx{position:fixed;inset:0;z-index:8900;width:100%;height:100%;pointer-events:none}
+
+/* Repaint transition */
+::view-transition-old(root){animation:none;mix-blend-mode:normal}
+::view-transition-new(root){animation:repaint 1s var(--expo) both;mix-blend-mode:normal}
+@keyframes repaint{from{clip-path:circle(0 at var(--vx,50%) var(--vy,50%))}to{clip-path:circle(150vmax at var(--vx,50%) var(--vy,50%))}}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1020px){
+  .links{display:none}
+  .ham{display:block}
+  .row{grid-template-columns:2rem minmax(0,1fr) auto;gap:.25rem 1rem}
+  .row-d{grid-column:2/-1;grid-row:2}
+  .row-dur{grid-column:3;grid-row:1}
+  .row-go{display:none}
+  .process,.about,.booking{grid-template-columns:minmax(0,1fr)}
+  .proc-head,.about-pic{position:static}
+  .about-pic{max-width:440px}
+  .pgrid,.fan{grid-template-columns:minmax(0,1fr)}
+  .tc{min-height:0}
+  .tc:nth-child(1){--x:0%;--start:-3deg}
+  .tc:nth-child(3){--x:0%;--start:3deg}
+  .band{grid-template-columns:minmax(0,1fr)}
+  .band-l{display:contents}
+  .band-copy{order:1}
+  .nail3d{order:2;height:clamp(300px,62vw,460px)}
+  .swatches{order:3;margin-top:0}
+  .ft{grid-template-columns:1fr 1fr}
+  .ig-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  body{font-size:1rem}
+  .hero{height:max(100svh,700px)}
+  .hero-copy{flex:0 0 auto;padding-bottom:1.1rem;padding-top:5.4rem}
+  .h1{font-size:min(21.5vw,14vh)}
+  .hero-foot{margin-top:0;max-width:440px;padding-top:1rem}
+  .hero-foot p{font-size:.98rem}
+  .ctas{flex-wrap:nowrap;gap:.45rem;margin-top:1rem}
+  .ctas .btn{padding:.85rem 1rem;font-size:.94rem;gap:.4rem}
+  .fingers{position:relative;right:auto;top:auto;bottom:0;flex:1 1 0;min-height:0;width:auto;margin:0 .85rem}
+  .gal-intro{flex-basis:76vw}
+  .chip,.cue{display:none}
+  .sec-top{flex-direction:column;align-items:flex-start}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:1.25rem 1rem 1.5rem;border-bottom:1px solid var(--line)}
+  .stat:nth-child(odd){padding-left:0}
+  .stat:nth-child(even){border-right:0}
+  .row{grid-template-columns:3.1rem minmax(0,1fr);padding-top:1.05rem;padding-bottom:1.05rem;gap:.1rem .9rem}
+  .row-n{display:none}
+  .row-thumb{display:block;grid-row:1/4;width:3.1rem;height:4.2rem;border-radius:var(--nail);overflow:hidden}
+  .row-thumb img{transform:scale(1.2)}
+  .row-name{grid-column:2;font-size:1.85rem}
+  .row-d{grid-column:2;grid-row:auto}
+  .row-dur{grid-column:2;grid-row:auto;text-align:left;font-size:.86rem}
+  .swatches{height:150px}
+  .sw-btn{font-size:.8rem}
+  .gcard{--gh:min(58vh,440px)}
+  .frow{grid-template-columns:minmax(0,1fr)}
+  .bd li{grid-template-columns:5.5rem minmax(0,1fr)}
+  .ft{grid-template-columns:minmax(0,1fr)}
+  .map{grid-template-columns:minmax(0,1fr)}
+  .ig-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lb-p,.lb-n{top:auto;bottom:1rem;margin:0}
+  .step{min-height:0;top:calc(10vh + var(--i)*.9rem)}
+  .fb{flex-direction:column}
+  .fab-btn{width:52px;height:52px}
+  .fab-pop{bottom:62px}
+}
+@media(max-height:619px),(max-width:760px) and (max-height:699px){.hero{position:relative}}
+@media(pointer:coarse){.cursor,.peek{display:none}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;animation-delay:0s!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .sweep,.cursor,#fx{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Kalo te përmbajtja</a>
+
+<div class="intro-screen" aria-hidden="true">
+  <svg class="intro-nail" viewBox="0 0 100 150" fill="none">
+    <defs><clipPath id="nailClip"><path d="M50 4C74 4 92 40 92 86c0 32-16 58-42 58S8 118 8 86C8 40 26 4 50 4Z"/></clipPath></defs>
+    <path d="M50 4C74 4 92 40 92 86c0 32-16 58-42 58S8 118 8 86C8 40 26 4 50 4Z" stroke="currentColor" stroke-width="2.5"/>
+    <g clip-path="url(#nailClip)"><rect class="intro-fill" x="0" y="0" width="100" height="150" fill="currentColor"/></g>
+    <path class="intro-gloss" d="M31 44C35 30 40 22 45 18" stroke="var(--polish)" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  </svg>
+  <div class="intro-name">Nails by Mikela</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Kryesore">
+  <a href="#" class="brand">Nails <em>by Mikela</em></a>
+  <div class="links" id="links">
+    <span class="pill" id="pill" aria-hidden="true"></span>
+    <a href="#about">Mikela</a>
+    <a href="#services">Shërbime</a>
+    <a href="#gallery">Punime</a>
+    <a href="#pricing">Çmime</a>
+    <a href="#booking">Kontakt</a>
+  </div>
+  <div class="nav-r">
+    <a href="#booking" class="btn btn-polish" data-mag><span class="roll"><span data-t="Rezervo">Rezervo</span></span></a>
+    <button class="ham" id="ham" type="button" aria-label="Hap menunë" aria-controls="mm" aria-expanded="false"><i></i><i></i></button>
+  </div>
+</nav>
+<div class="mmenu on-polish" id="mm">
+  <ul>
+    <li><a href="#about" style="--i:0">Mikela</a></li>
+    <li><a href="#services" style="--i:1">Shërbime</a></li>
+    <li><a href="#gallery" style="--i:2">Punime</a></li>
+    <li><a href="#pricing" style="--i:3">Çmime</a></li>
+    <li><a href="#booking" style="--i:4">Rezervo</a></li>
+  </ul>
+  <p>Çdo ditë · 07:00 - 22:00<br>Instagram: _nailsbymikela_</p>
+</div>
+
+<!-- HERO -->
+<header class="hero on-polish" id="hero">
+  <span class="glow a"></span><span class="glow b"></span><span class="sweep"></span>
+  <div class="hero-copy">
+    <div class="eyebrow hero-in" style="--d:0">Studio thonjsh · 4 vite eksperiencë</div>
+    <h1 class="h1" data-split>Art <br><em>në çdo</em> <br>detaj.</h1>
+    <div class="hero-foot">
+      <p class="hero-in" style="--d:2">Punime të kujdesshme, të pastra dhe të personalizuara për çdo kliente. Çdo set realizohet me durim, stil dhe vëmendje në detaj.</p>
+      <div class="ctas hero-in" style="--d:3">
+        <a href="#booking" class="btn btn-on" data-mag><span class="roll"><span data-t="Rezervo takim">Rezervo takim</span></span><svg class="arr" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.5 3.5 13 8l-4.500 4.500"/></svg></a>
+        <a href="#services" class="btn btn-line" data-mag><span class="roll"><span data-t="Shiko shërbimet">Shiko shërbimet</span></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="fingers" aria-hidden="true">
+    <div class="finger" style="--h:50;--rot:-7deg;--dp:.45;--i:3"><div class="nail" style="--i:0;--pos:64% 62%;--z:1.5"><img src="work-08.jpeg" alt=""><i class="gloss"></i></div></div>
+    <div class="finger" style="--h:72;--rot:-3deg;--dp:.95;--i:1"><div class="nail" style="--i:1;--pos:50% 45%;--z:1.3"><img src="work-04.jpeg" alt=""><i class="gloss"></i></div></div>
+    <div class="finger" style="--h:88;--rot:0deg;--dp:1.3;--i:0"><div class="nail" style="--i:2;--pos:60% 62%;--z:1.1"><img src="work-09.jpeg" alt=""><i class="gloss"></i></div></div>
+    <div class="finger" style="--h:68;--rot:3deg;--dp:.8;--i:2"><div class="nail" style="--i:3;--pos:62% 40%;--z:1.2"><img src="work-03-crop.jpeg" alt=""><i class="gloss"></i></div></div>
+    <div class="finger" style="--h:46;--rot:9deg;--dp:.35;--i:4"><div class="nail" style="--i:4;--pos:74% 60%;--z:1.45"><img src="work-07.jpeg" alt=""><i class="gloss"></i></div></div>
+  </div>
+  <div class="chip hero-in" style="--d:5"><span class="stars" aria-hidden="true">★★★★★</span><div><b>4 vite</b><span>Eksperiencë profesionale</span></div></div>
+  <span class="cue" aria-hidden="true"></span>
+</header>
+
+<main class="sheet" id="content">
+
+  <!-- MARQUEE -->
+  <div class="mq" aria-hidden="true">
+    <div class="mq-row" data-speed="1"><span>Manikyr Gel</span><span>Zgjatime</span><span>Nail Art</span><span>French</span><span>Ombré</span><span>Pedikyr</span></div>
+    <div class="mq-row ghost" data-speed="-.7"><span>Riparim thonjsh</span><span>Punime të pastra</span><span>Studio private</span><span>Sipas dëshirës</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-pic">
+      <div class="about-frame" data-r="clip">
+        <img id="aboutImg" src="work-04.jpeg" alt="Thonj bajame me French të bardhë dhe lule kobalt të pikturuara me dorë" loading="lazy">
+        <div class="quote">"Detaji bën<br>diferencën."</div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow" data-r>Njihu me Mikelën</div>
+      <h2 class="h2" data-split>4 vite <br><em>eksperiencë</em></h2>
+      <p class="scrub" data-scrub>Mikela krijon punime thonjsh me kujdes, pastërti dhe stil personal. Çdo takim nis me dëshirën e klientes dhe përfundon me një set që përshtatet me dorën, gjatësinë dhe shijen e saj.</p>
+      <p class="scrub" data-scrub>Nga pamjet minimaliste deri te dizajnet më të veçanta, çdo punim realizohet me produkte cilësore dhe higjienë të kujdesshme.</p>
+      <div class="sig" data-io>- Mikela</div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat" data-r style="--d:0"><b><span class="count" data-t="4">4</span>+</b><strong>Vite eksperiencë</strong><small>Punime të përditshme me kujdes</small></div>
+    <div class="stat" data-r style="--d:1"><b><span class="count" data-t="7">7</span>/7</b><strong>Ditë në javë</strong><small>E hapur çdo ditë</small></div>
+    <div class="stat" data-r style="--d:2"><b>07-22</b><strong>Orari</strong><small>07:00 - 22:00, çdo ditë</small></div>
+    <div class="stat" data-r style="--d:3"><b><span class="count" data-t="100">100</span>%</b><strong>Punime sipas dëshirës</strong><small>Çdo set personalizohet</small></div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="sec-top">
+      <div><div class="eyebrow" data-r>Çfarë ofroj</div><h2 class="h2" data-split>Shërbime <br><em>për thonjtë</em></h2></div>
+      <p class="lede" data-r style="--d:2">Takim i qetë, punim i pastër dhe rezultat që përshtatet me stilin tënd. Zgjidh një shërbim për ta rezervuar.</p>
+    </div>
+    <div class="rows" id="rows">
+      <a class="row" href="#booking" data-service="Full Set + Dizajn" data-img="0" data-r><span class="row-thumb"><img src="work-03-crop.jpeg" alt="" loading="lazy"></span><span class="row-n">01</span><span class="row-name">Full Set + Dizajn</span><span class="row-d">Set i plotë me formë, gjatësi dhe dizajn sipas dëshirës. I përshtatshëm për kliente që duan një rezultat të veçantë.</span><span class="row-dur">90-120 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+      <a class="row" href="#booking" data-service="Zgjatime Gel" data-img="1" data-r><span class="row-thumb"><img src="work-07.jpeg" alt="" loading="lazy"></span><span class="row-n">02</span><span class="row-name">Zgjatime Gel</span><span class="row-d">Zgjatime të lehta, elegante dhe të qëndrueshme, me formë dhe gjatësi të zgjedhur nga klientja.</span><span class="row-dur">90 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+      <a class="row" href="#booking" data-service="Nail Art" data-img="2" data-r><span class="row-thumb"><img src="work-06.jpeg" alt="" loading="lazy"></span><span class="row-n">03</span><span class="row-name">Nail Art</span><span class="row-d">Dizajne të thjeshta ose të detajuara, motive, ngjyra, chrome, glitter dhe ide sipas fotos ose stilit personal.</span><span class="row-dur">30-60 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+      <a class="row" href="#booking" data-service="Manikyr Gel" data-img="3" data-r><span class="row-thumb"><img src="work-10.jpeg" alt="" loading="lazy"></span><span class="row-n">04</span><span class="row-name">Manikyr Gel</span><span class="row-d">Përgatitje e thoit natyral, formësim, pastrim kutikulash dhe ngjyra gel për një pamje të rregullt.</span><span class="row-dur">60 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+      <a class="row" href="#booking" data-service="French &amp; Ombré" data-img="4" data-r><span class="row-thumb"><img src="work-02.jpeg" alt="" loading="lazy"></span><span class="row-n">05</span><span class="row-name">French &amp; Ombré</span><span class="row-d">Pamje klasike, e pastër dhe elegante për çdo ditë ose raste të veçanta.</span><span class="row-dur">75 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+      <a class="row" href="#booking" data-service="Pedikyr" data-img="5" data-r><span class="row-thumb"><img src="work-01.jpeg" alt="" loading="lazy" style="object-position:50% 62%"></span><span class="row-n">06</span><span class="row-name">Pedikyr</span><span class="row-d">Kujdes për këmbët, pastrim, formësim dhe ngjyrë sipas dëshirës.</span><span class="row-dur">75 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+      <a class="row" href="#booking" data-service="Mbushje &amp; Riparim" data-img="6" data-r><span class="row-thumb"><img src="work-09.jpeg" alt="" loading="lazy"></span><span class="row-n">07</span><span class="row-name">Mbushje &amp; Riparim</span><span class="row-d">Mirëmbajtje e setit ekzistues, riparim thonjsh dhe heqje e kujdesshme.</span><span class="row-dur">60-90 min</span><span class="row-go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></span></a>
+    </div>
+    <p class="services-note">Çmimet jepen me kontakt, në Instagram ose WhatsApp.</p>
+  </section>
+  <div class="peek" id="peek" aria-hidden="true">
+    <img src="work-03-crop.jpeg" alt="" loading="lazy"><img src="work-07.jpeg" alt="" loading="lazy" style="object-position:70% 70%"><img src="work-06.jpeg" alt="" loading="lazy" style="object-position:30% 45%"><img src="work-10.jpeg" alt="" loading="lazy" style="object-position:50% 45%"><img src="work-02.jpeg" alt="" loading="lazy" style="object-position:40% 65%"><img src="work-01.jpeg" alt="" loading="lazy" style="object-position:50% 65%"><img src="work-09.jpeg" alt="" loading="lazy" style="object-position:50% 50%">
+  </div>
+
+  <!-- POLISH PICKER -->
+  <section class="band" data-io>
+    <div class="band-l">
+    <div class="band-copy">
+      <div class="eyebrow">Provo një ngjyrë</div>
+      <h2 class="h2" data-split>Cila është <br><em>ngjyra jote?</em></h2>
+      <p>Kliko një llak dhe e gjithë faqja vishet me të. Ngjyrat vijnë nga punimet e Mikelës.</p>
+    </div>
+    <div class="swatches" role="group" aria-label="Zgjidh ngjyrën e faqes">
+      <button class="sw-btn" type="button" data-swatch="bordo" style="--c:#4E0B18;--i:0" aria-pressed="true"><span class="sw-nail" style="--h:68%"></span>Bordo</button>
+      <button class="sw-btn" type="button" data-swatch="qershi" style="--c:#A30D25;--i:1" aria-pressed="false"><span class="sw-nail" style="--h:80%"></span>Qershi</button>
+      <button class="sw-btn" type="button" data-swatch="roze" style="--c:#F2C7CF;--i:2" aria-pressed="false"><span class="sw-nail" style="--h:86%"></span>Rozë</button>
+      <button class="sw-btn" type="button" data-swatch="kobalt" style="--c:#1A2BB0;--i:3" aria-pressed="false"><span class="sw-nail" style="--h:78%"></span>Kobalt</button>
+      <button class="sw-btn" type="button" data-swatch="zeze" style="--c:#131013;--i:4" aria-pressed="false"><span class="sw-nail" style="--h:62%"></span>E zezë</button>
+    </div>
+    </div>
+    <div class="nail3d" id="nail3dWrap">
+      <canvas id="nail3d" role="img" aria-label="Një thua 3D që rrotullohet, në ngjyrën e zgjedhur" data-cur="Tërhiq"></canvas>
+      <small>Tërhiq për ta rrotulluar</small>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery on-polish" id="gallery">
+    <div class="gal-stick">
+      <div class="gal-track" id="galTrack">
+        <div class="gal-intro" data-cur="Tërhiq">
+          <div class="eyebrow" data-r>Punime reale</div>
+          <h2 class="h2" data-split>Punimet <br><em>e fundit</em></h2>
+          <p class="lede" data-r style="--d:2">Këto foto janë punime të realizuara nga Mikela dhe tregojnë stilin, pastërtinë dhe detajet e punës.</p>
+        </div>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-03-crop.jpeg" alt="Thonj të gjatë French me fjongo 3D dhe flokë dëbore" loading="lazy" style="--pos:60% 45%"></span><span class="gcap"><b>French me fjongo 3D</b><span>Full Set · Dizajn</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-04.jpeg" alt="Thonj bajame me French të bardhë dhe lule kobalt" loading="lazy" style="--pos:50% 48%"></span><span class="gcap"><b>Lule kobalt me dorë</b><span>Nail Art</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-09.jpeg" alt="Thonj bajame ngjyrë bordo me shkëlqim" loading="lazy"></span><span class="gcap"><b>Bordo me shkëlqim</b><span>Gel</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-07.jpeg" alt="Thonj stiletto me French të kuqe" loading="lazy" style="--pos:70% 66%"></span><span class="gcap"><b>French e kuqe</b><span>French</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-06.jpeg" alt="Thonj French me shimmer dhe lule rozë 3D" loading="lazy" style="--pos:28% 45%"></span><span class="gcap"><b>Lule rozë 3D</b><span>Nail Art</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-08.jpeg" alt="Thonj të zinj katrorë me efekt mermeri" loading="lazy" style="--pos:55% 62%"></span><span class="gcap"><b>E zezë me mermer</b><span>Dizajn</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-02.jpeg" alt="Thonj të shkurtër katrorë me French të bardhë klasike" loading="lazy" style="--pos:40% 62%"></span><span class="gcap"><b>French klasike</b><span>French</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-10.jpeg" alt="Thonj të shkurtër të zinj me shkëlqim" loading="lazy" style="--pos:45% 45%"></span><span class="gcap"><b>E zezë e shkurtër</b><span>Manikyr Gel</span></span></button>
+        <button class="gcard" type="button" data-cur="Shiko"><span class="gframe"><img src="work-01.jpeg" alt="Pedikyr me ngjyrë të zezë me shkëlqim" loading="lazy" style="--pos:50% 66%"></span><span class="gcap"><b>Pedikyr i zi</b><span>Pedikyr</span></span></button>
+      </div>
+      <div class="gal-bar" aria-hidden="true"><span class="gal-hint" id="galHint"><svg viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1.500 8h19M6 3.500 1.500 8 6 12.500M16 3.500 20.500 8 16 12.500"/></svg>Tërhiq</span><span id="galNow">01</span><i id="galProg"></i><span>09</span></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="proc-head">
+      <div class="eyebrow" data-r>Si funksionon</div>
+      <h2 class="h2" data-split>Takimi yt <br><em>hap pas hapi</em></h2>
+    </div>
+    <div class="steps" id="steps">
+      <article class="step" style="--i:0"><div class="step-n">01</div><div><h3>Kontakto</h3><p>Dërgo mesazh në Instagram me datën, orarin dhe idenë që ke për thonjtë.</p></div></article>
+      <article class="step" style="--i:1"><div class="step-n">02</div><div><h3>Zgjidh dizajnin</h3><p>Mikela të ndihmon me formën, gjatësinë, ngjyrën dhe detajet.</p></div></article>
+      <article class="step" style="--i:2"><div class="step-n">03</div><div><h3>Realizimi</h3><p>Çdo thua punohet me kujdes, pa nxitim dhe me higjienë të pastër.</p></div></article>
+      <article class="step" style="--i:3"><div class="step-n">04</div><div><h3>Rezultati</h3><p>Del me një set të rregullt, të bukur dhe gati për t'u fotografuar.</p></div></article>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="eyebrow" data-r>Çmime</div>
+    <h2 class="h2" data-split>Çmimet jepen <br><em>me kontakt</em></h2>
+    <div class="pgrid">
+      <article class="pc" data-tilt data-r="scale" style="--d:0">
+        <div class="pc-tier">Bazë</div><h3>Manikyr Gel</h3>
+        <p class="pc-desc">Për thonj natyralë, me përgatitje dhe ngjyrë gel.</p>
+        <div class="pc-dur">60<small>min</small></div><div class="pc-how">Çmimi me kontakt në Instagram</div>
+        <ul class="pc-items">
+          <li style="--i:0"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Pastrim dhe formësim</li>
+          <li style="--i:1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Ngjyrë sipas dëshirës</li>
+          <li style="--i:2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Përfundim i pastër</li>
+        </ul>
+        <a href="#booking" class="btn btn-polish" data-service="Manikyr Gel"><span class="roll"><span data-t="Kontakto">Kontakto</span></span></a>
+      </article>
+      <article class="pc feat on-polish" data-tilt data-r="scale" style="--d:1">
+        <div class="pc-tier">Signature</div><h3>Full Set + Dizajn</h3>
+        <p class="pc-desc">Set i plotë me formë, gjatësi dhe dizajn të personalizuar.</p>
+        <div class="pc-dur">90-120<small>min</small><svg class="seal" viewBox="0 0 100 100" role="img" aria-label="Më i kërkuari"><defs><path id="sealPath" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text><textPath href="#sealPath" textLength="234">Më i kërkuari · Më i kërkuari · </textPath></text></svg></div><div class="pc-how">Çmimi me kontakt në Instagram</div>
+        <ul class="pc-items">
+          <li style="--i:0"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Konsultim për dizajnin</li>
+          <li style="--i:1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Formë dhe gjatësi sipas dëshirës</li>
+          <li style="--i:2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Detaje nail art</li>
+        </ul>
+        <a href="#booking" class="btn btn-on" data-service="Full Set + Dizajn"><span class="roll"><span data-t="Kontakto">Kontakto</span></span></a>
+      </article>
+      <article class="pc" data-tilt data-r="scale" style="--d:2">
+        <div class="pc-tier">Kujdes</div><h3>Pedikyr</h3>
+        <p class="pc-desc">Kujdes për këmbët dhe ngjyrë e rregullt.</p>
+        <div class="pc-dur">75<small>min</small></div><div class="pc-how">Çmimi me kontakt në Instagram</div>
+        <ul class="pc-items">
+          <li style="--i:0"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Pastrim dhe formësim</li>
+          <li style="--i:1"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Ngjyrë gel ose klasike</li>
+          <li style="--i:2"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10.500 4 4 8-9"/></svg>Rezultat i pastër</li>
+        </ul>
+        <a href="#booking" class="btn btn-polish" data-service="Pedikyr"><span class="roll"><span data-t="Kontakto">Kontakto</span></span></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testi">
+    <div class="eyebrow" data-r>Klientet</div>
+    <h2 class="h2" data-split>Çfarë vlerësojnë <br><em>më shumë</em></h2>
+    <p class="lede" data-r style="--d:2">"Punimet e Mikelës janë të pastra, të kuruara dhe gjithmonë sipas dëshirës së klientes."</p>
+    <div class="fan" id="fan" data-io>
+      <figure class="tc"><div class="stars" role="img" aria-label="5 yje"><i style="--i:0">★</i><i style="--i:1">★</i><i style="--i:2">★</i><i style="--i:3">★</i><i style="--i:4">★</i></div><blockquote class="tc-q">"Forma del gjithmonë e rregullt dhe ngjyra zgjat shumë."</blockquote><figcaption class="tc-f"><span class="tc-av" aria-hidden="true">A</span><div><b>Kliente</b><span>Manikyr Gel</span></div></figcaption></figure>
+      <figure class="tc"><div class="stars" role="img" aria-label="5 yje"><i style="--i:2">★</i><i style="--i:3">★</i><i style="--i:4">★</i><i style="--i:5">★</i><i style="--i:6">★</i></div><blockquote class="tc-q">"Mikela dëgjon idenë dhe e realizon edhe më bukur nga sa e imagjinon."</blockquote><figcaption class="tc-f"><span class="tc-av" aria-hidden="true">M</span><div><b>Kliente</b><span>Full Set</span></div></figcaption></figure>
+      <figure class="tc"><div class="stars" role="img" aria-label="5 yje"><i style="--i:4">★</i><i style="--i:5">★</i><i style="--i:6">★</i><i style="--i:7">★</i><i style="--i:8">★</i></div><blockquote class="tc-q">"Studio është e qetë, puna është e pastër dhe rezultati del shumë elegant."</blockquote><figcaption class="tc-f"><span class="tc-av" aria-hidden="true">E</span><div><b>Kliente</b><span>Nail Art</span></div></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="insta">
+    <div class="insta-hd">
+      <div><div class="eyebrow" data-r>Instagram</div><a class="handle ul" data-r href="https://www.instagram.com/_nailsbymikela_/">_nailsbymikela_</a></div>
+      <a class="btn btn-polish" data-mag href="https://www.instagram.com/_nailsbymikela_/"><span class="roll"><span data-t="Shiko profilin">Shiko profilin</span></span><svg class="arr" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></a>
+    </div>
+    <div class="ig-grid" id="igGrid">
+      <a class="ig" data-r="scale" style="--d:0" data-sp="50" href="https://www.instagram.com/_nailsbymikela_/" aria-label="Punim në Instagram: lule rozë 3D"><img src="work-06.jpeg" alt="" loading="lazy" style="object-position:25% 45%"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8.500-5.200-8.500-11.300A4.700 4.700 0 0 1 12 7a4.700 4.700 0 0 1 8.500 2.700C20.500 15.800 12 21 12 21Z"/></svg></a>
+      <a class="ig" data-r="scale" style="--d:1" data-sp="-40" href="https://www.instagram.com/_nailsbymikela_/" aria-label="Punim në Instagram: French e kuqe"><img src="work-07.jpeg" alt="" loading="lazy" style="object-position:70% 68%"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8.500-5.200-8.500-11.300A4.700 4.700 0 0 1 12 7a4.700 4.700 0 0 1 8.500 2.700C20.500 15.800 12 21 12 21Z"/></svg></a>
+      <a class="ig" data-r="scale" style="--d:2" data-sp="70" href="https://www.instagram.com/_nailsbymikela_/" aria-label="Punim në Instagram: e zezë me mermer"><img src="work-08.jpeg" alt="" loading="lazy" style="object-position:50% 68%"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8.500-5.200-8.500-11.300A4.700 4.700 0 0 1 12 7a4.700 4.700 0 0 1 8.500 2.700C20.500 15.800 12 21 12 21Z"/></svg></a>
+      <a class="ig" data-r="scale" style="--d:3" data-sp="-55" href="https://www.instagram.com/_nailsbymikela_/" aria-label="Punim në Instagram: bordo me shkëlqim"><img src="work-09.jpeg" alt="" loading="lazy"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8.500-5.200-8.500-11.300A4.700 4.700 0 0 1 12 7a4.700 4.700 0 0 1 8.500 2.700C20.500 15.800 12 21 12 21Z"/></svg></a>
+      <a class="ig" data-r="scale" style="--d:4" data-sp="40" href="https://www.instagram.com/_nailsbymikela_/" aria-label="Punim në Instagram: e zezë e shkurtër"><img src="work-10.jpeg" alt="" loading="lazy" style="object-position:45% 42%"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8.500-5.200-8.500-11.300A4.700 4.700 0 0 1 12 7a4.700 4.700 0 0 1 8.500 2.700C20.500 15.800 12 21 12 21Z"/></svg></a>
+      <a class="ig" data-r="scale" style="--d:5" data-sp="-65" href="https://www.instagram.com/_nailsbymikela_/" aria-label="Punim në Instagram: French me fjongo 3D"><img src="work-03-crop.jpeg" alt="" loading="lazy" style="object-position:60% 45%"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-8.500-5.200-8.500-11.300A4.700 4.700 0 0 1 12 7a4.700 4.700 0 0 1 8.500 2.700C20.500 15.800 12 21 12 21Z"/></svg></a>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking on-polish" id="booking">
+    <span class="glow a"></span><span class="glow b"></span>
+    <div class="book-l">
+      <div class="eyebrow" data-r>Rezervo</div>
+      <h2 class="h2" data-split>Kontakto <br><em>Mikelën</em></h2>
+      <p class="lede" data-r style="--d:2">Plotëso kërkesën dhe shtyp butonin. WhatsApp do të hapet automatikisht me të gjitha të dhënat e rezervimit gati për t'u dërguar.</p>
+      <ul class="bd" data-r style="--d:3">
+        <li><span>Studio</span>Studio private - Adresa: Pajova</li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/_nailsbymikela_/">_nailsbymikela_</a></li>
+        <li><span>WhatsApp</span>Kërkesa dërgohet nga forma</li>
+        <li><span>Orari</span>07:00 - 22:00, çdo ditë</li>
+      </ul>
+    </div>
+    <div class="form-card" data-r="scale" style="--d:1">
+      <form id="bookingForm" novalidate>
+        <div class="frow">
+          <div class="f"><input id="firstName" name="Emri" type="text" autocomplete="given-name" placeholder=" " required><label for="firstName">Emri</label></div>
+          <div class="f"><input id="lastName" name="Mbiemri" type="text" autocomplete="family-name" placeholder=" " required><label for="lastName">Mbiemri</label></div>
+        </div>
+        <div class="frow">
+          <div class="f"><input id="email" name="Email" type="email" autocomplete="email" placeholder=" "><label for="email">Email (opsional)</label></div>
+          <div class="f"><input id="phone" name="Telefoni" type="tel" autocomplete="tel" placeholder=" " required><label for="phone">Telefoni</label></div>
+        </div>
+        <fieldset class="fs" id="serviceSet">
+          <legend>Shërbimi</legend>
+          <div class="chips">
+            <label class="chip-o"><input type="radio" name="service" value="Full Set + Dizajn" required><span>Full Set + Dizajn</span></label>
+            <label class="chip-o"><input type="radio" name="service" value="Zgjatime Gel"><span>Zgjatime Gel</span></label>
+            <label class="chip-o"><input type="radio" name="service" value="Nail Art"><span>Nail Art</span></label>
+            <label class="chip-o"><input type="radio" name="service" value="French &amp; Ombré"><span>French &amp; Ombré</span></label>
+            <label class="chip-o"><input type="radio" name="service" value="Manikyr Gel"><span>Manikyr Gel</span></label>
+            <label class="chip-o"><input type="radio" name="service" value="Pedikyr"><span>Pedikyr</span></label>
+            <label class="chip-o"><input type="radio" name="service" value="Mbushje &amp; Riparim"><span>Mbushje &amp; Riparim</span></label>
+          </div>
+        </fieldset>
+        <div class="f fix"><input id="date" name="Data e preferuar" type="date" required><label for="date">Data e preferuar</label></div>
+        <fieldset class="fs" id="timeSet">
+          <legend>Ora e preferuar</legend>
+          <div class="chips">
+            <label class="chip-o"><input type="radio" name="time" value="07:00 - 10:00" required><span>07:00 - 10:00</span></label>
+            <label class="chip-o"><input type="radio" name="time" value="10:00 - 13:00"><span>10:00 - 13:00</span></label>
+            <label class="chip-o"><input type="radio" name="time" value="13:00 - 16:00"><span>13:00 - 16:00</span></label>
+            <label class="chip-o"><input type="radio" name="time" value="16:00 - 19:00"><span>16:00 - 19:00</span></label>
+            <label class="chip-o"><input type="radio" name="time" value="19:00 - 22:00"><span>19:00 - 22:00</span></label>
+          </div>
+        </fieldset>
+        <div class="f"><textarea id="notes" name="Shënime" rows="2" placeholder=" "></textarea><label for="notes">Ideja, ngjyra ose dizajni që dëshiron</label></div>
+        <button class="btn btn-polish fsubmit" type="submit"><span class="roll"><span data-t="Dërgo kërkesën">Dërgo kërkesën</span></span><svg class="arr" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></button>
+        <p class="fnote">Pas klikimit, do të hapet WhatsApp me kërkesën tënde të përgatitur. Vetëm shtyp Send.</p>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer style="position:relative;z-index:2">
+  <div class="ft">
+    <div><div class="ft-brand">Nails <em>by Mikela</em></div><p>Punime thonjsh të personalizuara, me kujdes, pastërti dhe vëmendje në çdo detaj.</p></div>
+    <div><h4>Shërbime</h4><ul><li><a class="ul" href="#services">Full Set + Dizajn</a></li><li><a class="ul" href="#services">Zgjatime Gel</a></li><li><a class="ul" href="#services">Nail Art</a></li><li><a class="ul" href="#services">French &amp; Ombré</a></li><li><a class="ul" href="#services">Manikyr Gel</a></li><li><a class="ul" href="#services">Pedikyr</a></li></ul></div>
+    <div><h4>Studio</h4><ul><li><a class="ul" href="#about">Rreth Mikelës</a></li><li><a class="ul" href="#gallery">Punime</a></li><li><a class="ul" href="#pricing">Çmime</a></li><li><a class="ul" href="#booking">Rezervo</a></li></ul></div>
+    <div><h4>Orari &amp; Kontakti</h4><ul><li>Çdo ditë · 07:00 - 22:00</li><li><a class="ul" href="https://www.instagram.com/_nailsbymikela_/">Instagram: _nailsbymikela_</a></li><li>Studio private</li><li>Adresa: Pajova</li></ul></div>
+  </div>
+  <div class="map" aria-label="Vendndodhja në hartë">
+    <div>
+      <h4 style="font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A79896">Vendndodhja</h4>
+      <h3>Studio në <em>Pajova</em></h3>
+      <p>Pajova, Albania</p>
+      <a class="btn" data-mag href="https://www.google.com/maps/search/?api=1&query=Pajova%2C%20Albania" target="_blank" rel="noopener"><span class="roll"><span data-t="Hape në Google Maps">Hape në Google Maps</span></span></a>
+    </div>
+    <div class="map-frame"><iframe title="Harta e Nails by Mikela në Pajova" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Pajova%2C%20Albania&output=embed"></iframe></div>
+  </div>
+  <div class="wordmark" id="wordmark" data-io aria-hidden="true">Mikela</div>
+  <div class="fb"><span>© <span id="year"></span> Nails by Mikela.</span><span>Studio thonjsh · 4 vite eksperiencë</span><span>Instagram: _nailsbymikela_</span></div>
+</footer>
+
+<!-- Floating polish button: the nail fills as you scroll, the menu repaints the site -->
+<div class="fab" id="fab">
+  <div class="fab-pop" id="fabPop" role="group" aria-label="Zgjidh ngjyrën e faqes">
+    <button type="button" data-swatch="bordo" style="--c:#4E0B18" aria-pressed="true"><i></i>Bordo</button>
+    <button type="button" data-swatch="qershi" style="--c:#A30D25" aria-pressed="false"><i></i>Qershi</button>
+    <button type="button" data-swatch="roze" style="--c:#F2C7CF" aria-pressed="false"><i></i>Rozë</button>
+    <button type="button" data-swatch="kobalt" style="--c:#1A2BB0" aria-pressed="false"><i></i>Kobalt</button>
+    <button type="button" data-swatch="zeze" style="--c:#131013" aria-pressed="false"><i></i>E zezë</button>
+  </div>
+  <button class="fab-btn" id="fabBtn" type="button" aria-label="Ndrysho ngjyrën e faqes" aria-expanded="false" aria-controls="fabPop">
+    <svg viewBox="0 0 100 150" fill="none" aria-hidden="true">
+      <defs><clipPath id="fabClip"><path d="M50 4C74 4 92 40 92 86c0 32-16 58-42 58S8 118 8 86C8 40 26 4 50 4Z"/></clipPath></defs>
+      <g clip-path="url(#fabClip)"><rect class="fab-fill" x="0" y="0" width="100" height="150"/></g>
+      <path d="M50 4C74 4 92 40 92 86c0 32-16 58-42 58S8 118 8 86C8 40 26 4 50 4Z" stroke="var(--ink)" stroke-width="7"/>
+    </svg>
+  </button>
+</div>
+
+<dialog class="lb" id="lb" aria-label="Foto e punimit">
+  <button class="lb-btn lb-x" id="lbX" type="button" aria-label="Mbyll"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m3 3 10 10M13 3 3 13"/></svg></button>
+  <button class="lb-btn lb-p" id="lbP" type="button" aria-label="Foto e mëparshme"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></button>
+  <button class="lb-btn lb-n" id="lbN" type="button" aria-label="Foto tjetër"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M8.500 3.500 13 8l-4.500 4.500"/></svg></button>
+  <div class="lb-in"><img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=""><div class="lb-cap"><b id="lbT"></b><span id="lbC"></span></div></div>
+</dialog>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-in"></span><b id="cursorLab"></b></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<script>
+(() => {
+const root=document.documentElement;
+const $=(s,c=document)=>c.querySelector(s);
+const $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE=matchMedia('(hover:hover) and (pointer:fine)').matches;
+const INTRO=root.classList.contains('intro');
+
+/* ---------- Split text ---------- */
+$$('[data-split]').forEach(el=>{
+  const label=el.textContent.replace(/\s+/g,' ').trim();
+  let i=0;
+  const walk=node=>{
+    [...node.childNodes].forEach(n=>{
+      if(n.nodeType===3){
+        const frag=document.createDocumentFragment();
+        n.textContent.split(/(\s+)/).forEach(tok=>{
+          if(!tok) return;
+          if(!tok.trim()){frag.append(' ');return;}
+          const w=document.createElement('span');w.className='w';
+          [...tok].forEach(ch=>{
+            const c=document.createElement('span');c.className='c';c.textContent=ch;c.style.setProperty('--i',i++);w.append(c);
+          });
+          frag.append(w);
+        });
+        n.replaceWith(frag);
+      }else if(n.nodeType===1&&n.tagName!=='BR') walk(n);
+    });
+  };
+  walk(el);
+  el.setAttribute('aria-label',label);
+});
+
+/* Scrubbed paragraphs: words light up as you scroll */
+const scrubs=$$('[data-scrub]').map(el=>{
+  const parts=el.textContent.trim().split(/\s+/);
+  el.textContent='';
+  const words=parts.map((t,i)=>{
+    const s=document.createElement('span');s.className='sw';s.textContent=t;
+    if(!RM) s.style.opacity=.14;
+    el.append(s);if(i<parts.length-1) el.append(' ');
+    return s;
+  });
+  return {el,words,last:-1};
+});
+
+/* Footer wordmark letters */
+const wm=$('#wordmark');
+wm.innerHTML=[...wm.textContent].map((c,i)=>`<span style="--i:${i}">${c}</span>`).join('');
+
+/* ---------- Reveal on view ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  e.target.classList.add('in');
+  if(e.target.id==='fan') setTimeout(()=>e.target.classList.add('done'),2200);
+  io.unobserve(e.target);
+}),{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+$$('[data-r],[data-io],.pgrid,main [data-split],footer [data-split]').forEach(el=>io.observe(el));
+/* Tall/wide-track items can fail a ratio threshold; a second observer catches them */
+const io2=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){e.target.classList.add('in');io2.unobserve(e.target);}
+}),{threshold:0});
+$$('.about-frame,.form-card,.gal-intro [data-split],.gal-intro [data-r]').forEach(el=>io2.observe(el));
+
+const heroStart=()=>{
+  root.classList.add('ready');
+  $('.h1').classList.add('in');
+};
+setTimeout(heroStart,INTRO?1500:60);
+
+/* ---------- Count up ---------- */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  cio.unobserve(e.target);
+  if(RM) return;
+  const t=+e.target.dataset.t,start=performance.now();
+  (function run(now){
+    const p=clamp((now-start)/1700),ez=1-Math.pow(1-p,4);
+    e.target.textContent=Math.round(ez*t);
+    if(p<1) requestAnimationFrame(run);
+  })(start);
+}),{threshold:.5});
+$$('.count').forEach(c=>{if(!RM)c.textContent='0';cio.observe(c);});
+
+/* ---------- Nav + mobile menu ---------- */
+const nav=$('#nav'),mm=$('#mm'),ham=$('#ham');
+const setMenu=open=>{
+  mm.classList.toggle('open',open);
+  ham.setAttribute('aria-expanded',String(open));
+  ham.setAttribute('aria-label',open?'Mbyll menunë':'Hap menunë');
+  root.style.overflow=open?'hidden':'';
+  if(open) nav.classList.remove('hide');
+};
+ham.addEventListener('click',()=>setMenu(!mm.classList.contains('open')));
+$$('a',mm).forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape'){setMenu(false);setFab(false);}});
+
+const links=$$('#links a'),pill=$('#pill');
+const movePill=a=>{
+  links.forEach(l=>{l.classList.toggle('on',l===a);if(l===a)l.setAttribute('aria-current','true');else l.removeAttribute('aria-current');});
+  if(!a){pill.style.opacity=0;return;}
+  pill.style.opacity=1;pill.style.width=a.offsetWidth+'px';pill.style.transform=`translateX(${a.offsetLeft}px)`;
+};
+const spy=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    movePill(links.find(l=>l.getAttribute('href')==='#'+e.target.id)||null);
+  });
+},{rootMargin:'-45% 0px -50% 0px'});
+['hero','about','services','gallery','pricing','booking'].forEach(id=>spy.observe(document.getElementById(id)));
+
+/* ---------- Polish picker ---------- */
+const meta=$('meta[name="theme-color"]');
+const syncPolish=name=>{
+  $$('[data-swatch]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.swatch===name)));
+  const hex=getComputedStyle(root).getPropertyValue('--polish').trim();
+  meta.content=hex;
+  if(typeof nail3dRef==='function') nail3dRef(hex);
+};
+let nail3dRef=null;
+const setPolish=(name,x,y)=>{
+  const run=()=>{
+    root.dataset.polish=name;
+    try{localStorage.setItem('polish',name);}catch(e){}
+    syncPolish(name);
+  };
+  if(document.startViewTransition&&!RM){
+    root.style.setProperty('--vx',x+'px');root.style.setProperty('--vy',y+'px');
+    document.startViewTransition(run);
+  }else run();
+};
+syncPolish(root.dataset.polish||'bordo');
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-swatch]');
+  if(!b) return;
+  const r=b.getBoundingClientRect();
+  setPolish(b.dataset.swatch,r.left+r.width/2,r.top+r.height/2);
+  burst(r.left+r.width/2,r.top+r.height/2,26);
+});
+const fab=$('#fab'),fabBtn=$('#fabBtn');
+const setFab=o=>{fab.classList.toggle('open',o);fabBtn.setAttribute('aria-expanded',String(o));};
+fabBtn.addEventListener('click',()=>setFab(!fab.classList.contains('open')));
+document.addEventListener('click',e=>{if(!e.target.closest('#fab'))setFab(false);});
+
+/* ---------- Choosing a service anywhere preselects it in the form ---------- */
+document.addEventListener('click',e=>{
+  const a=e.target.closest('[data-service]');
+  if(!a) return;
+  const r=$$('input[name="service"]').find(i=>i.value===a.dataset.service);
+  if(r) r.checked=true;
+});
+
+/* ---------- Magnetic buttons ---------- */
+if(FINE&&!RM) $$('[data-mag]').forEach(el=>{
+  el.addEventListener('pointermove',e=>{
+    const r=el.getBoundingClientRect();
+    el.style.setProperty('--mgx',(e.clientX-r.left-r.width/2)*.28+'px');
+    el.style.setProperty('--mgy',(e.clientY-r.top-r.height/2)*.38+'px');
+  });
+  el.addEventListener('pointerleave',()=>{el.style.removeProperty('--mgx');el.style.removeProperty('--mgy');});
+});
+
+/* ---------- 3D tilt ---------- */
+if(FINE&&!RM) $$('[data-tilt]').forEach(el=>{
+  el.addEventListener('pointermove',e=>{
+    const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    el.classList.add('tilting');
+    el.style.setProperty('--ry',((x-.5)*11).toFixed(2));
+    el.style.setProperty('--rx',((.5-y)*9).toFixed(2));
+    el.style.setProperty('--sx',x*100+'%');el.style.setProperty('--sy',y*100+'%');
+  });
+  el.addEventListener('pointerleave',()=>{el.classList.remove('tilting');el.style.setProperty('--ry',0);el.style.setProperty('--rx',0);});
+});
+
+/* ---------- Glitter ---------- */
+const fx=$('#fx'),ctx=fx.getContext('2d');
+let parts=[],fxOn=false;
+const sizeFx=()=>{const d=Math.min(devicePixelRatio||1,2);fx.width=innerWidth*d;fx.height=innerHeight*d;ctx.setTransform(d,0,0,d,0,0);};
+sizeFx();
+function spawn(x,y,spread,life){
+  const a=Math.random()*Math.PI*2,s=Math.random()*spread;
+  const c=getComputedStyle(root).getPropertyValue('--glow').trim();
+  parts.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-spread*.2,r:1.5+Math.random()*3.8,life,max:life,rot:Math.random()*3,c:['#fff',c,'#F1D9A7'][Math.random()*3|0]});
+}
+function fxLoop(){
+  ctx.clearRect(0,0,innerWidth,innerHeight);
+  parts=parts.filter(p=>p.life>0);
+  parts.forEach(p=>{
+    p.life--;p.x+=p.vx;p.y+=p.vy;p.vy+=.055;p.vx*=.975;p.rot+=.09;
+    const k=p.life/p.max,r=p.r*(.4+.6*k);
+    ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.globalAlpha=k;ctx.fillStyle=p.c;
+    ctx.beginPath();
+    for(let i=0;i<8;i++){const q=i%2?r*.28:r*1.5,t=i*Math.PI/4;ctx.lineTo(Math.cos(t)*q,Math.sin(t)*q);}
+    ctx.closePath();ctx.fill();ctx.restore();
+  });
+  if(parts.length) requestAnimationFrame(fxLoop); else{fxOn=false;ctx.clearRect(0,0,innerWidth,innerHeight);}
+}
+const startFx=()=>{if(!fxOn){fxOn=true;requestAnimationFrame(fxLoop);}};
+function burst(x,y,n=18){
+  if(RM) return;
+  for(let i=0;i<n;i++) spawn(x,y,6.5,44+Math.random()*30);
+  startFx();
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.btn,.chip-o,.gcard');
+  if(b&&e.clientX) burst(e.clientX,e.clientY,16);
+});
+
+/* ---------- Hero pointer + cursor + peek ---------- */
+const hero=$('#hero');
+let tx=0,ty=0,mx=0,my=0,cx=0,cy=0,ptx=-200,pty=-200,lastT=0;
+const cursor=$('#cursor'),cursorLab=$('#cursorLab'),peek=$('#peek');
+let px=0,py=0;
+if(FINE&&!RM){
+  addEventListener('pointermove',e=>{
+    ptx=e.clientX;pty=e.clientY;
+    if(!cursor.classList.contains('on')){cursor.classList.add('on');cx=ptx;cy=pty;px=ptx;py=pty;}
+    if(e.clientY<innerHeight&&scrollY<innerHeight*.6){
+      tx=e.clientX/innerWidth*2-1;ty=e.clientY/innerHeight*2-1;
+      const now=performance.now();
+      if(now-lastT>42&&e.target.closest&&e.target.closest('#hero')){lastT=now;spawn(e.clientX,e.clientY,1.1,38);startFx();}
+    }
+  },{passive:true});
+  document.addEventListener('pointerover',e=>{
+    const t=e.target.closest&&e.target;
+    if(!t) return;
+    const lab=t.closest('[data-cur]');
+    cursor.classList.toggle('lab',!!lab);
+    if(lab) cursorLab.textContent=lab.dataset.cur;
+    cursor.classList.toggle('big',!lab&&!!t.closest('a,button,label,input,textarea'));
+  });
+  document.documentElement.addEventListener('pointerleave',()=>cursor.classList.remove('on'));
+  const rows=$('#rows'),imgs=$$('img',peek);
+  let cur=-1;
+  rows.addEventListener('pointerover',e=>{
+    const r=e.target.closest('.row');if(!r)return;
+    const i=+r.dataset.img;
+    if(i!==cur){imgs.forEach((m,k)=>m.classList.toggle('on',k===i));cur=i;}
+    peek.classList.add('on');
+  });
+  rows.addEventListener('pointerleave',()=>{peek.classList.remove('on');});
+  /* Peek images are offscreen: load them once the list is near, so the first hover is instant */
+  imgs.forEach(m=>m.loading='eager');
+}
+
+/* ---------- Horizontal gallery ---------- */
+const gallery=$('#gallery'),galTrack=$('#galTrack'),galStick=$('.gal-stick');
+const gcards=$$('.gcard'),galNow=$('#galNow'),galProg=$('#galProg');
+const pinMQ=matchMedia('(min-width:901px) and (min-height:560px)');
+let galDist=0;
+const sizeGal=()=>{
+  const pin=pinMQ.matches&&!RM;
+  root.classList.toggle('pin',pin);
+  if(pin){
+    galTrack.style.transform='';
+    galDist=Math.max(0,galTrack.scrollWidth-innerWidth);
+    gallery.style.height=innerHeight+galDist+'px';
+  }else{
+    galDist=0;gallery.style.height='';galTrack.style.transform='';
+  }
+};
+/* Keyboard users tabbing through cards: bring the focused card into the pinned view */
+gcards.forEach((c,i)=>c.addEventListener('focus',()=>{
+  if(!galDist) return;
+  const want=(c.offsetLeft+c.offsetWidth/2-innerWidth/2);
+  scrollTo({top:gallery.getBoundingClientRect().top+scrollY+clamp(want,0,galDist),behavior:RM?'auto':'smooth'});
+}));
+
+/* Drag and fling. In the pinned layout the page scroll position drives the track,
+   so dragging moves the scroll position and normal scrolling keeps working. */
+const drag={on:false,moved:false,startX:0,startPos:0,lastX:0,lastT:0,v:0,pos:0,raf:0,skipClick:false};
+const galTop=()=>gallery.getBoundingClientRect().top+scrollY;
+const galPos=()=>galDist?scrollY:galTrack.scrollLeft;
+const galSet=p=>{
+  if(galDist){const t=galTop();scrollTo({top:clamp(p,t,t+galDist),behavior:'instant'});}
+  else galTrack.scrollLeft=p;
+};
+const galEnd=()=>{
+  cancelAnimationFrame(drag.raf);drag.raf=0;
+  galTrack.style.scrollSnapType='';
+  galTrack.style.setProperty('--tilt',0);
+};
+galTrack.addEventListener('dragstart',e=>e.preventDefault());
+galTrack.addEventListener('pointerdown',e=>{
+  if(e.button!==0) return;
+  /* Phones already swipe the unpinned track natively */
+  if(!galDist&&e.pointerType!=='mouse') return;
+  galEnd();
+  Object.assign(drag,{on:true,moved:false,startX:e.clientX,startPos:galPos(),lastX:e.clientX,lastT:e.timeStamp,v:0});
+});
+addEventListener('pointermove',e=>{
+  if(!drag.on) return;
+  const dx=e.clientX-drag.startX;
+  if(!drag.moved&&Math.abs(dx)>6){
+    drag.moved=true;
+    galTrack.classList.add('dragging');
+    galTrack.style.scrollSnapType='none';
+    $('#galHint').classList.add('gone');
+    if(FINE){cursor.classList.add('lab');cursorLab.textContent='Tërhiq';}
+    try{galTrack.setPointerCapture(e.pointerId);}catch(err){}
+  }
+  if(!drag.moved) return;
+  galSet(drag.startPos-dx);
+  const dt=Math.max(1,e.timeStamp-drag.lastT);
+  drag.v=drag.v*.6+((drag.lastX-e.clientX)/dt)*.4;
+  drag.lastX=e.clientX;drag.lastT=e.timeStamp;
+  if(!RM) galTrack.style.setProperty('--tilt',clamp(drag.v*2.6,-5,5).toFixed(2));
+},{passive:true});
+const dragEnd=e=>{
+  if(!drag.on) return;
+  drag.on=false;
+  galTrack.classList.remove('dragging');
+  if(!drag.moved) return;
+  drag.skipClick=true;setTimeout(()=>{drag.skipClick=false;},60);
+  /* A pause before release means no fling */
+  if(e.type==='pointerup'&&e.timeStamp-drag.lastT>90) drag.v=0;
+  if(RM||e.type==='pointercancel'||Math.abs(drag.v)<.05){galEnd();return;}
+  drag.v=clamp(drag.v,-3.2,3.2);
+  drag.pos=galPos();
+  let last=performance.now();
+  (function coast(now){
+    const dt=Math.min(40,now-last);last=now;
+    drag.v*=Math.exp(-dt/340);
+    drag.pos+=drag.v*dt;
+    galSet(drag.pos);
+    galTrack.style.setProperty('--tilt',clamp(drag.v*2.6,-5,5).toFixed(2));
+    const lo=galDist?galTop():0,hi=galDist?lo+galDist:galTrack.scrollWidth-galTrack.clientWidth;
+    if(Math.abs(drag.v)<.02||drag.pos<=lo||drag.pos>=hi){galEnd();return;}
+    drag.raf=requestAnimationFrame(coast);
+  })(last);
+};
+addEventListener('pointerup',dragEnd);
+addEventListener('pointercancel',dragEnd);
+/* Wheel or touch stops a fling instead of fighting it */
+['wheel','touchstart'].forEach(t=>addEventListener(t,()=>{if(drag.raf)galEnd();},{passive:true}));
+/* A finished drag must not also open the photo */
+galTrack.addEventListener('click',e=>{
+  if(drag.skipClick){e.stopPropagation();e.preventDefault();drag.skipClick=false;}
+},true);
+
+/* ---------- Lightbox ---------- */
+const lb=$('#lb'),lbImg=$('#lbImg'),lbT=$('#lbT'),lbC=$('#lbC');
+let lbI=0,lbFrom=null;
+const fillLb=i=>{
+  lbI=(i+gcards.length)%gcards.length;
+  const c=gcards[lbI],m=$('img',c);
+  lbImg.src=m.currentSrc||m.src;lbImg.alt=m.alt;
+  lbT.textContent=$('.gcap b',c).textContent;lbC.textContent=$('.gcap span',c).textContent;
+};
+const openLb=i=>{
+  lbFrom=gcards[i].getBoundingClientRect();
+  fillLb(i);
+  const sbw=innerWidth-root.clientWidth;
+  root.style.overflow='hidden';document.body.style.paddingRight=sbw+'px';
+  lb.showModal();
+  if(RM) return;
+  const to=lbImg.getBoundingClientRect();
+  if(to.width){
+    const dx=lbFrom.left+lbFrom.width/2-(to.left+to.width/2),dy=lbFrom.top+lbFrom.height/2-(to.top+to.height/2),s=lbFrom.height/to.height;
+    lbImg.animate([{transform:`translate(${dx}px,${dy}px) scale(${s})`,borderRadius:'60px'},{transform:'none',borderRadius:'18px'}],{duration:750,easing:'cubic-bezier(.16,1,.3,1)'});
+  }
+};
+const closeLb=()=>lb.close();
+lb.addEventListener('close',()=>{root.style.overflow='';document.body.style.paddingRight='';gcards[lbI].focus({preventScroll:true});});
+const stepLb=d=>{
+  fillLb(lbI+d);
+  if(!RM) lbImg.animate([{opacity:0,transform:`translateX(${d*50}px) scale(.96)`},{opacity:1,transform:'none'}],{duration:550,easing:'cubic-bezier(.16,1,.3,1)'});
+};
+gcards.forEach((c,i)=>c.addEventListener('click',()=>openLb(i)));
+$('#lbX').addEventListener('click',closeLb);
+$('#lbP').addEventListener('click',()=>stepLb(-1));
+$('#lbN').addEventListener('click',()=>stepLb(1));
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb-in'))closeLb();});
+lb.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')stepLb(-1);if(e.key==='ArrowRight')stepLb(1);});
+
+/* ---------- 3D nail (plain WebGL, no libraries) ---------- */
+const nail3d=(()=>{
+  const cv=$('#nail3d'),wrap=$('#nail3dWrap');
+  let gl=null;
+  try{gl=cv.getContext('webgl',{alpha:true,antialias:true,premultipliedAlpha:true,preserveDrawingBuffer:true});}catch(e){}
+  if(!gl){root.classList.add('no3d');return null;}
+
+  /* Mesh: a stack of flattened rings along the nail, each bent into the nail's C-curve */
+  const NV=72,NT=48,W0=.66,L=2.6;
+  const halfW=v=>{
+    if(v<.16){const s=(.16-v)/.16;return W0*Math.sqrt(Math.max(0,1-s*s));}
+    const t=(v-.16)/.84;return W0*Math.pow(Math.max(0,1-Math.pow(t,2.1)),.8);
+  };
+  const pos=new Float32Array((NV+1)*NT*3),nor=new Float32Array(pos.length),idx=new Uint16Array(NV*NT*6);
+  for(let i=0;i<=NV;i++){
+    const v=(1-Math.cos(i/NV*Math.PI))/2,w=halfW(v),th=.085*Math.sqrt(Math.min(1,w/W0));
+    for(let j=0;j<NT;j++){
+      const a=j/NT*Math.PI*2,x=w*Math.cos(a),k=(i*NT+j)*3;
+      pos[k]=x;pos[k+1]=(v-.5)*L;
+      pos[k+2]=-.42*x*x-.24*(v-.35)*(v-.35)+th*Math.sin(a);
+    }
+  }
+  let n=0;
+  for(let i=0;i<NV;i++)for(let j=0;j<NT;j++){
+    const a=i*NT+j,b=i*NT+(j+1)%NT,c=a+NT,d=b+NT;
+    idx.set([a,b,c,b,d,c],n);n+=6;
+  }
+  for(let t=0;t<n;t+=3){
+    const [a,b,c]=[idx[t]*3,idx[t+1]*3,idx[t+2]*3];
+    const ux=pos[b]-pos[a],uy=pos[b+1]-pos[a+1],uz=pos[b+2]-pos[a+2];
+    const vx=pos[c]-pos[a],vy=pos[c+1]-pos[a+1],vz=pos[c+2]-pos[a+2];
+    const nx=uy*vz-uz*vy,ny=uz*vx-ux*vz,nz=ux*vy-uy*vx;
+    [a,b,c].forEach(p=>{nor[p]+=nx;nor[p+1]+=ny;nor[p+2]+=nz;});
+  }
+  /* Make sure normals face outward: the top of a middle ring must point to +z */
+  const probe=(Math.floor(NV/2)*NT+Math.floor(NT/4))*3,flip=nor[probe+2]<0?-1:1;
+  for(let p=0;p<nor.length;p+=3){
+    const l=Math.hypot(nor[p],nor[p+1],nor[p+2])||1;
+    nor[p]*=flip/l;nor[p+1]*=flip/l;nor[p+2]*=flip/l;
+  }
+
+  const sh=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);
+    if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(s));return s;};
+  const prog=gl.createProgram();
+  gl.attachShader(prog,sh(gl.VERTEX_SHADER,`
+    attribute vec3 aP,aN;uniform mat3 uR;uniform vec2 uF;varying vec3 vN,vV,vO;
+    void main(){vec3 p=uR*aP;vN=uR*aN;vO=aN;vV=vec3(0.,0.,6.)-p;p.z-=6.;
+      gl_Position=vec4(p.x*uF.x,p.y*uF.y,(p.z*-20.5/19.5)-(20./19.5),-p.z);}`));
+  gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,`
+    precision mediump float;varying vec3 vN,vV,vO;uniform vec3 uC;
+    float box(vec2 q,vec2 c,vec2 s){vec2 d=abs(q-c)-s;return smoothstep(.04,-.02,max(d.x,d.y));}
+    vec3 env(vec3 r){
+      vec3 c=mix(vec3(.05,.04,.045),vec3(.8,.78,.78),smoothstep(-.6,1.,r.y));
+      if(r.z>.05){vec2 q=r.xy/r.z;
+        c+=vec3(10.)*box(q,vec2(.42,.62),vec2(.26,.62));
+        c+=vec3(4.)*box(q,vec2(-.95,.1),vec2(.07,.8));}
+      else if(r.z<-.05){vec2 q=r.xy/r.z;c+=vec3(5.)*box(q,vec2(.1,-.3),vec2(.5,.3));}
+      return c;}
+    void main(){
+      vec3 N=normalize(vN),V=normalize(vV),R=reflect(-V,N);
+      vec3 base=mix(vec3(.74,.5,.44),uC,smoothstep(-.25,.1,vO.z));
+      float d=max(dot(N,normalize(vec3(.4,.7,.9))),0.);
+      float nv=max(dot(N,V),0.),F=.07+.93*pow(1.-nv,5.);
+      vec3 c=base*(.5+.62*d)*(1.-F)+env(R)*F;
+      c=c/(1.+c*.18);
+      gl_FragColor=vec4(pow(c,vec3(1./2.2)),1.);}`));
+  gl.linkProgram(prog);gl.useProgram(prog);
+  const buf=(data,name)=>{gl.bindBuffer(gl.ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);
+    const l=gl.getAttribLocation(prog,name);gl.enableVertexAttribArray(l);gl.vertexAttribPointer(l,3,gl.FLOAT,false,0,0);};
+  buf(pos,'aP');buf(nor,'aN');
+  gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,gl.createBuffer());gl.bufferData(gl.ELEMENT_ARRAY_BUFFER,idx,gl.STATIC_DRAW);
+  gl.enable(gl.DEPTH_TEST);gl.clearColor(0,0,0,0);
+  const uR=gl.getUniformLocation(prog,'uR'),uF=gl.getUniformLocation(prog,'uF'),uC=gl.getUniformLocation(prog,'uC');
+
+  /* Polish colour, eased so the nail "repaints" too */
+  const toLin=hex=>{const m=hex.trim().replace('#','');return [0,2,4].map(i=>Math.pow(parseInt(m.substr(i,2),16)/255,2.2));};
+  let col=toLin(getComputedStyle(root).getPropertyValue('--polish')),colTo=col.slice();
+  const setColor=hex=>{colTo=toLin(hex);dirty=true;goFront=true;};
+
+  let ang=.5,wobble=0,spin=.7,seen=false,dirty=true,held=false,goFront=false,lastX=0,lastY=0,lastT=0,dragV=0;
+  new IntersectionObserver(es=>{seen=es[0].isIntersecting;if(seen)dirty=true;},{rootMargin:'120px'}).observe(cv);
+
+  const draw=()=>{
+    const dpr=Math.min(devicePixelRatio||1,2),W=Math.round(cv.clientWidth*dpr),H=Math.round(cv.clientHeight*dpr);
+    if(!W||!H) return;
+    if(cv.width!==W||cv.height!==H){cv.width=W;cv.height=H;gl.viewport(0,0,W,H);}
+    const asp=W/H,f=Math.min(3.45,5.7*asp);
+    /* Rotate around the nail's length, then lean it, then a small nod */
+    const ca=Math.cos(ang),sa=Math.sin(ang),lean=-.24,cl=Math.cos(lean),sl=Math.sin(lean),cw=Math.cos(wobble),sw=Math.sin(wobble);
+    /* Column-major: Rx(wobble) * Rz(lean) * Ry(ang) */
+    gl.uniformMatrix3fv(uR,false,new Float32Array([
+      cl*ca, cw*sl*ca+sw*sa, sw*sl*ca-cw*sa,
+      -sl,   cw*cl,          sw*cl,
+      cl*sa, cw*sl*sa-sw*ca, sw*sl*sa+cw*ca
+    ]));
+    gl.uniform2f(uF,f/asp,f);
+    gl.uniform3fv(uC,col);
+    gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+    gl.drawElements(gl.TRIANGLES,n,gl.UNSIGNED_SHORT,0);
+  };
+
+  cv.addEventListener('dragstart',e=>e.preventDefault());
+  cv.addEventListener('pointerdown',e=>{
+    held=true;lastX=e.clientX;lastY=e.clientY;lastT=e.timeStamp;dragV=0;
+    cv.classList.add('grabbing');wrap.classList.add('used');
+    try{cv.setPointerCapture(e.pointerId);}catch(err){}
+  });
+  cv.addEventListener('pointermove',e=>{
+    if(!held) return;
+    const dt=Math.max(1,e.timeStamp-lastT),dx=e.clientX-lastX,dy=e.clientY-lastY;
+    ang+=dx*.012;wobble=clamp(wobble+dy*.006,-.7,.7);
+    dragV=dragV*.6+(dx*.012/dt*1000)*.4;
+    lastX=e.clientX;lastY=e.clientY;lastT=e.timeStamp;dirty=true;
+    if(RM) draw();
+  });
+  const release=()=>{if(!held)return;held=false;spin=clamp(dragV,-9,9);cv.classList.remove('grabbing');};
+  cv.addEventListener('pointerup',release);
+  cv.addEventListener('pointercancel',release);
+  cv.addEventListener('webglcontextlost',()=>{root.classList.add('no3d');seen=false;});
+
+  let prev=0;
+  return {setColor,frame(now,scrollV){
+    const dt=Math.min(.05,(now-prev)/1000);prev=now;
+    let settling=false;
+    col=col.map((c,i)=>{const d=colTo[i]-c;if(Math.abs(d)>.001)settling=true;return c+d*Math.min(1,dt*5);});
+    if(RM){
+      /* No spinning here, but a chosen colour must still be visible on the front */
+      if(goFront){ang=.35;goFront=false;}
+      if(dirty||settling){if(!settling)col=colTo.slice();draw();dirty=false;}
+      return;
+    }
+    if(!seen) return;
+    if(goFront&&!held){
+      /* Show the new colour: swing to the polished side by the shortest way */
+      const TAU=Math.PI*2,d=((.35-ang)%TAU+TAU*1.5)%TAU-TAU/2;
+      ang+=d*Math.min(1,dt*4.5);
+      if(Math.abs(d)<.04){goFront=false;spin=.35;}
+    }else if(!held){
+      spin+=(.7-spin)*Math.min(1,dt*1.6);
+      /* The bare back passes quicker, so the polish faces you most of the time */
+      const back=Math.max(0,-Math.cos(ang));
+      ang+=(spin*(1+back*2.4)+scrollV*.06)*dt;
+      wobble+=(Math.sin(now*.0007)*.16-wobble)*Math.min(1,dt*1.4);
+    }
+    draw();
+  }};
+})();
+
+if(nail3d) nail3dRef=nail3d.setColor;
+
+/* ---------- Chrome headline ---------- */
+const h1=$('.h1');
+let h1Letters=$$('.c',h1),tiltX=0;
+const sizeChrome=()=>{
+  h1.style.setProperty('--hw',h1.offsetWidth+'px');
+  h1.style.setProperty('--hh',h1.offsetHeight+'px');
+  h1Letters.forEach(c=>{
+    c.style.setProperty('--lx',(c.offsetLeft-h1.offsetLeft)+'px');
+    c.style.setProperty('--ly',(c.offsetTop-h1.offsetTop)+'px');
+  });
+};
+/* Phones that share tilt freely move the shine; others (iPhone asks permission) keep the slow sweep */
+if(!FINE&&!RM) addEventListener('deviceorientation',e=>{
+  if(e.gamma==null) return;
+  tiltX=clamp(e.gamma/30,-1,1);
+},{passive:true});
+let chromeLast=0;
+const chromeFrame=now=>{
+  /* Phones repaint this at 30fps to save battery */
+  if(!FINE&&now-chromeLast<33) return;
+  chromeLast=now;
+  const ph=(now*.00032+mx*.55+tiltX*.8)%4;
+  h1.style.setProperty('--ph',ph.toFixed(3));
+};
+
+/* ---------- The one animation loop ---------- */
+const sheet=$('.sheet'),fabEl=$('.fab-btn'),aboutImg=$('#aboutImg'),aboutFrame=$('.about-frame');
+const mqRows=$$('.mq-row').map(el=>({el,sp:+el.dataset.speed,x:0,w:0}));
+const steps=$$('#steps .step'),igs=$$('#igGrid .ig');
+let mqSeen=false,mqIO=new IntersectionObserver(es=>{mqSeen=es[0].isIntersecting;});
+mqIO.observe($('.mq'));
+/* Duplicate marquee content so it can loop forever */
+mqRows.forEach(r=>{r.el.innerHTML+=r.el.innerHTML+r.el.innerHTML;});
+const sizeMq=()=>mqRows.forEach(r=>{r.w=r.el.scrollWidth/3;});
+
+let vh=innerHeight,docH=1,lastY=-1,prevY=scrollY,vel=0;
+const measure=()=>{vh=innerHeight;sizeGal();sizeMq();sizeChrome();docH=Math.max(1,document.documentElement.scrollHeight-vh);lastY=-1;};
+measure();
+addEventListener('resize',()=>{sizeFx();measure();movePill($('#links a.on'));});
+addEventListener('load',measure);
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(measure);
+
+function onScroll(y){
+  hero.style.setProperty('--p',clamp(y/vh).toFixed(4));
+  hero.classList.toggle('past',y>vh*1.25);
+  sheet.style.setProperty('--s',clamp(1-y/(vh*.9)).toFixed(3));
+  fabEl.style.setProperty('--sp',clamp(y/docH).toFixed(4));
+  /* nav hides going down, returns going up */
+  if(!mm.classList.contains('open')) nav.classList.toggle('hide',y>prevY+0.5&&y>vh*.7?true:(y<prevY-0.5?false:nav.classList.contains('hide')));
+
+  scrubs.forEach(s=>{
+    const r=s.el.getBoundingClientRect();
+    const p=clamp((vh*.86-r.top)/(r.height+vh*.42));
+    const n=Math.round(p*s.words.length*1.02);
+    if(n===s.last) return;
+    s.last=n;
+    s.words.forEach((w,i)=>{w.style.opacity=i<n?1:.14;});
+  });
+
+  const ar=aboutFrame.getBoundingClientRect();
+  if(ar.bottom>-50&&ar.top<vh){
+    aboutImg.style.transform=`translateY(${(clamp((vh-ar.top)/(vh+ar.height))*-15).toFixed(2)}%)`;
+  }
+
+  if(galDist){
+    const gr=gallery.getBoundingClientRect();
+    const gp=clamp(-gr.top/galDist);
+    if(gr.bottom>0&&gr.top<vh){
+      galTrack.style.transform=`translate3d(${(-gp*galDist).toFixed(1)}px,0,0)`;
+      galProg.style.setProperty('--gp',gp.toFixed(4));
+      galNow.textContent=String(Math.min(gcards.length,1+Math.floor(gp*gcards.length))).padStart(2,'0');
+      gcards.forEach(c=>{
+        const r=c.getBoundingClientRect();
+        if(r.right<-100||r.left>innerWidth+100) return;
+        const par=((r.left+r.width/2)/innerWidth-.5)*-2;
+        $('img',c).style.setProperty('--par',par.toFixed(3));
+      });
+    }
+  }
+
+  steps.forEach((s,i)=>{
+    const nx=steps[i+1];
+    if(!nx) return;
+    const stickAt=parseFloat(getComputedStyle(nx).top)||0;
+    const t=clamp(1-(nx.getBoundingClientRect().top-stickAt)/(vh*.55));
+    s.style.setProperty('--sc',(1-t*.055).toFixed(4));
+  });
+
+  igs.forEach(g=>{
+    const r=g.parentElement.getBoundingClientRect();
+    if(r.bottom<-120||r.top>vh+120) return;
+    const p=(r.top+r.height/2)/vh-.5;
+    g.style.setProperty('--ty',(p*+g.dataset.sp).toFixed(1));
+  });
+  prevY=y;
+}
+
+function tick(now){
+  const y=scrollY;
+  if(nail3d) nail3d.frame(now||0,clamp(vel,-55,55));
+  if(!RM){
+    if(y<vh*1.1) chromeFrame(now||0);
+    if(y!==lastY){onScroll(y);lastY=y;}
+    /* hero pointer */
+    mx+=(tx-mx)*.06;my+=(ty-my)*.06;
+    if(y<vh*1.2){hero.style.setProperty('--mx',mx.toFixed(3));hero.style.setProperty('--my',my.toFixed(3));}
+    /* cursor + peek */
+    if(FINE){
+      cx+=(ptx-cx)*.2;cy+=(pty-cy)*.2;
+      cursor.style.transform=`translate3d(${cx.toFixed(1)}px,${cy.toFixed(1)}px,0)`;
+      const dx=ptx-px;
+      px+=dx*.11;py+=(pty-py)*.11;
+      peek.style.transform=`translate3d(${(px+24).toFixed(1)}px,${(py-160).toFixed(1)}px,0) rotate(${clamp(dx*.05,-13,13).toFixed(2)}deg)`;
+    }
+    /* marquee follows scroll speed */
+    vel+=((y-(tick.py??y))-vel)*.12;tick.py=y;
+    if(mqSeen){
+      const v=clamp(vel,-55,55);
+      mqRows.forEach(r=>{
+        r.x-=r.sp*(1.05+Math.abs(v)*.42)*(v<-1?-1:1);
+        if(r.w){if(r.x<=-r.w)r.x+=r.w;if(r.x>0)r.x-=r.w;}
+        r.el.style.transform=`translate3d(${r.x.toFixed(1)}px,0,0) skewX(${(-v*.16).toFixed(2)}deg)`;
+      });
+    }
+  }
+  requestAnimationFrame(tick);
+}
+if(RM){onScroll(scrollY);addEventListener('scroll',()=>onScroll(scrollY),{passive:true});scrubs.forEach(s=>s.words.forEach(w=>w.style.opacity=1));}
+requestAnimationFrame(tick);
+
+/* ---------- Footer + form (WhatsApp flow) ---------- */
+$('#year').textContent=new Date().getFullYear();
+
+const dateInput=$('#date');
+if(dateInput){
+  const today=new Date();
+  today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
+  dateInput.min=today.toISOString().split('T')[0];
+}
+
+const bookingForm=$('#bookingForm'),formStatus=$('#formStatus');
+const flagBad=()=>{
+  $$('.bad',bookingForm).forEach(b=>b.classList.remove('bad'));
+  void bookingForm.offsetWidth;
+  let first=null;
+  $$('input,textarea',bookingForm).forEach(i=>{
+    if(i.checkValidity()) return;
+    (i.closest('.f')||i.closest('.fs')).classList.add('bad');
+    first=first||i;
+  });
+  if(first) first.focus({preventScroll:false});
+};
+bookingForm.addEventListener('input',e=>{
+  const b=e.target.closest('.f,.fs');
+  if(b&&e.target.checkValidity()) b.classList.remove('bad');
+  if(formStatus.textContent&&bookingForm.checkValidity()) formStatus.textContent='';
+});
+bookingForm.addEventListener('submit',event=>{
+  event.preventDefault();
+  if(!bookingForm.checkValidity()){
+    flagBad();
+    formStatus.textContent='Ju lutem plotësoni fushat e kërkuara para dërgimit.';
+    return;
+  }
+
+  const whatsappNumber='355692182793'; // Zëvendësoje me numrin real të Mikelës, pa + dhe pa hapësira. Shembull: 355691234567
+  const val=id=>document.getElementById(id)?.value.trim()||'';
+  const radio=name=>bookingForm.querySelector(`input[name="${name}"]:checked`)?.value||'';
+
+  const message=[
+    'Përshëndetje Mikela, dua të bëj një kërkesë për termin.',
+    '',
+    `Emri: ${val('firstName')} ${val('lastName')}`.trim(),
+    `Telefoni: ${val('phone')}`,
+    val('email') ? `Email: ${val('email')}` : '',
+    `Shërbimi: ${radio('service')}`,
+    `Data e preferuar: ${val('date')}`,
+    `Ora e preferuar: ${radio('time')}`,
+    val('notes') ? `Shënime: ${val('notes')}` : ''
+  ].filter(Boolean).join('\n');
+
+  const whatsappUrl=`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+  formStatus.textContent='Kërkesa u përgatit. WhatsApp po hapet me mesazhin gati për dërgim.';
+  const b=$('.fsubmit').getBoundingClientRect();
+  burst(b.left+b.width/2,b.top+b.height/2,60);
+  window.open(whatsappUrl,'_blank');
+});
+})();
+</script>
+</body>
+</html>
